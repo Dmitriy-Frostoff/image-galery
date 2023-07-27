@@ -1,0 +1,132 @@
+.header__container {
+  // Position
+
+  // block-model
+  padding: $padding-content-desktop;
+  // Typography
+
+  // Decoration
+  background-color: $color-background-dark;
+  // Animation
+
+  // Various
+
+}
+
+.nav__container {
+  // Position
+
+  // block-model
+  column-gap: 40px;
+  align-items: center;
+
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+
+}
+
+.nav {
+  // Position
+
+  // block-model
+
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+
+}
+
+.nav__list {
+  // Position
+
+  // block-model
+  column-gap: 30px;
+
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+
+}
+
+.nav__item {
+  // Position
+
+  // block-model
+
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+
+}
+
+.nav__link {
+  // Position
+  position: relative;
+  // block-model
+
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+  &:before {
+    @extend %transition-basic;
+    position: absolute;
+    bottom: 10px;
+    border-bottom: 3px solid $color-interactive;
+    content: "";
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+  }
+
+  &:hover {
+    &:before {
+      @extend %transition-basic;
+      transform: scaleX(1);
+    }
+  }
+}
+
+.nav__user-logo {
+  // Position
+
+  // block-model
+
+  // Typography
+
+  // Decoration
+  @extend %cursor-pointer;
+  // Animation
+
+  // Various
+  & > path {
+    @include transition ($name: fill, $duration: 0.7s, $timing-function: ease, $delay: 0s);
+  }
+
+  &:hover {
+    & > path {
+      @include transition ($name: fill, $duration: 0.7s, $timing-function: ease, $delay: 0s);
+      fill: $color-interactive;
+    }
+  }
+}
