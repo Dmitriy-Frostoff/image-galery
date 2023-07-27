@@ -1,13 +1,18 @@
-// normolize
+// normalize
 @import "./base/normalize";
 
 //abstracts
 @import "./abstracts/constants";
 @import "./abstracts/placeholders";
+@import "./abstracts/mixins";
+@import "./abstracts/animations";
 
 //base
 @import "./base/typography";
+@import "./base/common";
 
 //layout
+@import "./layout/content-structure";
 
 //components
+@import "./components/header";
