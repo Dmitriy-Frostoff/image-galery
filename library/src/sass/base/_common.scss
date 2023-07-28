@@ -28,27 +28,27 @@ html {
 
 }
 
-.body {
-  // Position
+// body {
+//   // Position
 
-  // block-model
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding: 0;
+//   // block-model
+//   min-height: 100vh;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   margin: 0 auto;
+//   padding: 0;
 
-  // Typography
-  @extend %font-Inter;
-  font-size: 16px;
-  // Decoration
+//   // Typography
+//   @extend %font-Inter;
+//   font-size: 16px;
+//   // Decoration
 
-  // Animation
+//   // Animation
 
-  // Various
+//   // Various
   
-}
+// }
 
 @include media-tablet-minus1px {
   .body_scroll-lock {
@@ -266,7 +266,6 @@ html {
   // Various
   &:hover, &:active {
     @extend %transition-basic;
-    // @include animation ($name: pulsation, $duration: 1s, $iteration-count: infinite, $direction: normal, $timing-function: ease, $delay: 0s);
   }
   
   &:hover {
@@ -282,7 +281,7 @@ html {
   }
 }
 
-.code, p, pre, nav, ul, li {
+.code, p, pre, nav, ul, li, h1, h2, h3, h4, h5 {
    // Position
 
   // block-model
@@ -365,7 +364,7 @@ img {
   // Various
 
   @include media-wide-desktop {
-    max-width: $content-width-desktop;
+    max-width: $width-desktop;
   }
 
   @include media-desktop {
@@ -397,8 +396,7 @@ img {
   // Position
 
   // block-model
-  @include flex-two-child-basis ($first-basis: 25%, $last-basis: 75%);
-  flex-wrap: nowrap;
+
   // Typography
 
   // Decoration
@@ -413,7 +411,7 @@ img {
 // =========================================== modificators!!! Priority over above ==============================
 // ==============================================================================================================
 
-.text-light {
+.text_light {
   // Position
 
   // block-model
@@ -428,7 +426,7 @@ img {
 
 }
 
-.text-dark {
+.text_dark {
   // Position
 
   // block-model
@@ -443,7 +441,7 @@ img {
 
 }
 
-.text-interactive {
+.text_interactive {
   // Position
 
   // block-model
