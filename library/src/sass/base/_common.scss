@@ -28,27 +28,27 @@ html {
 
 }
 
-// body {
-//   // Position
+body {
+  // Position
 
-//   // block-model
-//   min-height: 100vh;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-between;
-//   margin: 0 auto;
-//   padding: 0;
+  // block-model
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
 
-//   // Typography
-//   @extend %font-Inter;
-//   font-size: 16px;
-//   // Decoration
+  // Typography
+  @extend %font-Inter;
+  font-size: 16px;
+  // Decoration
 
-//   // Animation
+  // Animation
 
-//   // Various
+  // Various
   
-// }
+}
 
 @include media-tablet-minus1px {
   .body_scroll-lock {
@@ -104,7 +104,7 @@ html {
 
 }
 
-.title-h2 { // TODO add line after pseudo 
+.title-h2 { 
   // Position
 
   // block-model
@@ -450,6 +450,40 @@ img {
 
   // Decoration
   color: $color-interactive;
+  // Animation
+
+  // Various
+
+}
+
+.title__container {
+  // Position
+
+  // block-model
+  width: 100%;
+  align-items: center;
+  row-gap: 20px;
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+
+}
+
+.title_underline {
+  // Position
+
+  // block-model
+  width: 50px;
+  min-height: 1px;
+  // Typography
+
+  // Decoration
+  border-bottom: 1px solid $color-dark;
+
   // Animation
 
   // Various
