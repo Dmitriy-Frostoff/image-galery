@@ -7,12 +7,13 @@
 @import "./abstracts/mixins";
 @import "./abstracts/animations";
 
+//layout
+@import "./layout/content-structure";
+
 //base
 @import "./base/typography";
 @import "./base/common";
-
-//layout
-@import "./layout/content-structure";
+@import "./base/pagination";
 
 //components
 @import "./components/header";
