@@ -307,7 +307,7 @@ template {
   display: none;
 }
 
-.link, .paragraph-s, .paragraph-m, .paragraph-l, body {
+.link, .paragraph-s, .paragraph-m, .paragraph-l, .paragraph-l-enhanced, body {
   font-family: "Inter";
 }
 
@@ -465,7 +465,7 @@ body {
   font-size: 30px;
   font-style: normal;
   font-weight: 400;
-  line-height: 40px;
+  line-height: 50px;
   letter-spacing: normal;
   color: #000000;
 }
@@ -484,6 +484,15 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 50px;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.paragraph-l-enhanced {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
   letter-spacing: normal;
   color: #000000;
 }
@@ -510,7 +519,7 @@ body {
   font-size: 10px;
   font-style: normal;
   font-weight: 400;
-  line-height: 40px;
+  line-height: 10px;
   letter-spacing: normal;
   color: #000000;
 }
@@ -625,6 +634,10 @@ img {
 
 .text_let-space-0d6px {
   letter-spacing: 0.6px;
+}
+
+.text_let-space-0d4px {
+  letter-spacing: 0.4px;
 }
 
 .text_height-normal {
@@ -775,10 +788,41 @@ img {
   border-color: #BB945F;
 }
 
-.digital-library-card__button {
+.library-card__button {
   width: 242px;
   height: 44px;
-  padding: 10px 40px;
+}
+
+.library-card__button_at-center {
+  align-self: center;
+}
+
+.check-form__container {
+  padding: 20px 20px 30px;
+  row-gap: 20px;
+  border: 3px solid #BB945F;
+  background-color: #FFFFFF;
+}
+
+.check-form__form {
+  padding: 20px 20px 25px;
+  row-gap: 20px;
+  background-color: #BB945F;
+}
+.check-form__form > :nth-child(2) {
+  padding-bottom: 5px;
+}
+
+.check-form__title {
+  align-self: center;
+}
+
+.check-form__input {
+  width: 520px;
+  height: 66px;
+  padding-left: 20px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
 }
 
 .header__container {
@@ -960,6 +1004,39 @@ img {
 .library-location {
   width: 696px;
   height: 414px;
+}
+
+.library-card {
+  width: 100%;
+  padding: 20px 0 40px;
+}
+
+.library-card__container {
+  row-gap: 40px;
+}
+
+.library-card__contetnt-container {
+  width: 100%;
+}
+
+.library-card__check-container {
+  row-gap: 30px;
+}
+
+.authorization__container {
+  max-width: 456px;
+  align-items: flex-end;
+  row-gap: 35px;
+}
+
+.authorization__info {
+  text-align: right;
+}
+
+.authorization__buttons-container {
+  width: 100%;
+  justify-content: flex-end;
+  column-gap: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
