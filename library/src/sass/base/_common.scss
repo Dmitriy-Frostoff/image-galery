@@ -68,6 +68,40 @@ body {
   }
 }
 
+.link { 
+  // Position
+
+  // block-model
+  width: inherit;
+  height: inherit;
+  // Typography
+  @extend %font-Inter;
+  @include text ($size: $text-fsize-L, $style: normal, $weight: 400, $height: 40px);
+  line-height: 50px;
+  // Decoration
+  color: $color-light;
+  // Animation
+  @extend %transition-basic;
+  @extend %cursor-pointer;
+  
+  // Various
+  &:hover, &:active {
+    @extend %transition-basic;
+  }
+  
+  &:hover {
+    @extend %transition-basic;
+    color: $color-interactive;
+    border-radius: inherit;
+  }
+
+  &:active {
+    @extend %transition-basic;
+    color: $color-interactive;
+    border-radius: inherit;
+  }
+}
+
 .title {
   // Position
 
@@ -266,38 +300,6 @@ body {
 
 }
 
-.link { 
-  // Position
-
-  // block-model
-  width: inherit;
-  height: inherit;
-  // Typography
-  @extend %font-Inter;
-  @include text ($size: $text-fsize-L, $style: normal, $weight: 400, $height: 40px);
-  line-height: 50px;
-  // Decoration
-  color: $color-light;
-  // Animation
-  @extend %transition-basic;
-  
-  // Various
-  &:hover, &:active {
-    @extend %transition-basic;
-  }
-  
-  &:hover {
-    @extend %transition-basic;
-    color: $color-interactive;
-    border-radius: inherit;
-  }
-
-  &:active {
-    @extend %transition-basic;
-    color: $color-interactive;
-    border-radius: inherit;
-  }
-}
 
 .code, p, pre, nav, ul, li, h1, h2, h3, h4, h5 {
    // Position
