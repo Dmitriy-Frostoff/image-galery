@@ -14,8 +14,12 @@
 @import "./base/typography";
 @import "./base/common";
 @import "./base/pagination";
+@import "./base/favorites-checker";
+@import "./base/book-card";
+@import "./base/buttons";
 
 //components
 @import "./components/header";
 @import "./components/welcome";
 @import "./components/about";
+@import "./components/favorites";

@@ -1,9 +1,9 @@
-.about {
+.favorites {
   // Position
 
   // block-model
   width: 100%;
-  padding: 20px 0 35px;
+  padding: 20px 0 40px;
   // Typography
 
   // Decoration
@@ -13,11 +13,26 @@
   // Various
 }
 
-.about__container {
+.favorites__container {
   // Position
 
   // block-model
   align-items: center;
+  row-gap: 40px;
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+}
+
+.favorites__content-container {
+  // Position
+
+  // block-model
+  column-gap: 220px;
   row-gap: 40px;
   // Typography
 

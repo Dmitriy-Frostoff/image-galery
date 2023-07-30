@@ -237,7 +237,7 @@ body {
 
   // Typography
   @extend %font-Inter;
-  @include text ($size: $text-fsize-M, $style: normal, $weight: 400, $height: 40px);
+  @include text ($size: $text-fsize-S, $style: normal, $weight: 400, $height: 40px);
 
   // Decoration
   color: $color-dark;
@@ -441,6 +441,21 @@ img {
 
 }
 
+.text_dark-background {
+  // Position
+
+  // block-model
+
+  // Typography
+
+  // Decoration
+  color: $color-background-dark;
+  // Animation
+
+  // Various
+
+}
+
 .text_interactive {
   // Position
 
@@ -587,6 +602,22 @@ img {
 
   // Typography
   letter-spacing: 0.6px;
+  // Decoration
+
+  // Animation
+
+  // Various
+
+}
+
+.text_height-normal {
+  // Position
+
+  // block-model
+
+  // Typography
+  line-height: normal;
+
   // Decoration
 
   // Animation
