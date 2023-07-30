@@ -147,7 +147,7 @@ body {
 
   // Typography
   @extend %font-Forum;
-  @include text ($size: $title-h4_desktop, $style: normal, $weight: 400, $height: 40px);
+  @include text ($size: $title-h4_desktop, $style: normal, $weight: 400, $height: 50px);
 
   // Decoration
   color: $color-dark;
@@ -184,6 +184,24 @@ body {
   // Typography
   @extend %font-Forum;
   @include text ($size: $text-fsize-XL, $style: normal, $weight: 400, $height: 50px);
+
+  // Decoration
+  color: $color-dark;
+
+  // Animation
+
+  // Various
+
+}
+
+.paragraph-l-enhanced {
+  // Position
+
+  // block-model
+
+  // Typography
+  @extend %font-Inter;
+  @include text ($size: $title-h4_desktop, $style: normal, $weight: 400, $height: 30px);
 
   // Decoration
   color: $color-dark;
@@ -237,7 +255,7 @@ body {
 
   // Typography
   @extend %font-Inter;
-  @include text ($size: $text-fsize-S, $style: normal, $weight: 400, $height: 40px);
+  @include text ($size: $text-fsize-S, $style: normal, $weight: 400, $height: 10px);
 
   // Decoration
   color: $color-dark;
@@ -602,6 +620,21 @@ img {
 
   // Typography
   letter-spacing: 0.6px;
+  // Decoration
+
+  // Animation
+
+  // Various
+
+}
+
+.text_let-space-0d4px {
+  // Position
+
+  // block-model
+
+  // Typography
+  letter-spacing: 0.4px;
   // Decoration
 
   // Animation
