@@ -869,4 +869,63 @@ img {
   row-gap: 40px;
 }
 
+.coffee-shop {
+  width: 100%;
+  padding: 20px 0 40px;
+}
+
+.coffee-shop__container {
+  row-gap: 40px;
+}
+
+.coffee-shop__description {
+  text-align: center;
+}
+
+.coffee-shop__menu-container {
+  width: 100%;
+}
+
+.coffee-shop__menu {
+  row-gap: 40px;
+  column-gap: 60px;
+}
+
+.coffee-shop__menu_left {
+  align-items: flex-start;
+}
+
+.coffee-shop__menu_right {
+  align-items: flex-end;
+}
+
+.coffee-shop__menu-content {
+  width: 100%;
+  column-gap: 60px;
+}
+
+.coffee-shop__menu-content_right {
+  justify-content: flex-end;
+}
+
+.coffee-shop__menu-line {
+  position: relative;
+  display: block;
+  width: 100px;
+  height: 100%;
+}
+.coffee-shop__menu-line:before {
+  position: absolute;
+  top: 22px;
+  left: 0;
+  content: "";
+  width: 100%;
+  min-height: 1px;
+  background-color: #BB945F;
+}
+
+.coffee-shop__menu-price-container {
+  column-gap: 60px;
+}
+
 /*# sourceMappingURL=style.css.map */
