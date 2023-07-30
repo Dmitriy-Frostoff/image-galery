@@ -16,7 +16,7 @@
   // Animation
   @extend %transition-basic;
   // Various
-  &:hover {
+  &:hover, &:active {
     border-color: $color-interactive;
     background-color: $color-interactive;
     @extend %cursor-pointer;
