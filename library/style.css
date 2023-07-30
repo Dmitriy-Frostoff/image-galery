@@ -928,4 +928,38 @@ img {
   column-gap: 60px;
 }
 
+.contacts {
+  width: 100%;
+  padding: 20px 0 40px;
+}
+
+.contacts__container {
+  row-gap: 40px;
+}
+
+.contacts__info-container {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.contacts__content-container {
+  row-gap: 40px;
+}
+
+.contacts__content-item {
+  row-gap: 20px;
+}
+.contacts__content-item:first-of-type > :nth-child(1) {
+  padding-bottom: 20px;
+}
+
+.contacts__link {
+  line-height: 40px;
+}
+
+.library-location {
+  width: 696px;
+  height: 414px;
+}
+
 /*# sourceMappingURL=style.css.map */
