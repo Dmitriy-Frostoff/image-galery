@@ -4,8 +4,7 @@
   "description": "Library is a stage #0 task in the course of which you will make the landing page of the site for the selection and sale of books, make it adaptive and interactive.",
   "main": "index.js",
   "scripts": {
-    "style": "sass --watch ./library/src/sass/library.scss:./library/style.css",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "style": "sass --watch ./library/src/sass/library.scss:./library/style.css"
   },
   "repository": {
     "type": "git",
