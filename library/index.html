@@ -23,11 +23,11 @@
 </head>
 <body>
   <!-- header start -->
-  <header class="container layout-multiple-columns header__container">
+  <header class="container layout-multiple-columns header__container _overflow-hidden">
     <h1 class="title title-h1 text_let-space-0d6px text_light"><a class="link title-h1 text_let-space-0d6px text_light" href="https://www.brooklinelibrary.org/about/" target="_blank">Brooklyn Public Library</a></h1>
     <div class="layout-multiple-columns nav__container">
-      <nav class="nav layout-multiple-columns nav__list">
-        <ul class="nav layout-multiple-columns nav__list">
+      <nav class="nav nav_position">
+        <ul class="layout-multiple-columns nav__list">
           <li class="nav__item">
             <a class="link nav__link text_light" href="#about">About</a>
           </li>
@@ -45,7 +45,12 @@
           </li>
         </ul>
       </nav>
-      <object data="./src/assets/images/svg/header/icon_profile.svg" type="image/svg+xml"></object>
+      <object class="nav__user-logo_z-index" data="./src/assets/images/svg/header/icon_profile.svg" type="image/svg+xml"></object>
+      <div class="layout-one-column burger-menu burger-menu_position">
+        <div class="burger-menu__cutlet burger-menu__cutlet_position"></div>
+        <div class="burger-menu__cutlet burger-menu__cutlet_position"></div>
+        <div class="burger-menu__cutlet burger-menu__cutlet_position"></div>
+      </div>
     </div>
   </header>
   <!-- header end -->
@@ -425,7 +430,8 @@
   </footer>
   <!-- footer end -->
   <!-- script start -->
-  <script src="./src/js/librarySelfCheck/librarySelfCheck-part1/librarySelfCheckPart1.js"></script>
+  <script type="module" src="./src/js/index.js"></script>
+  <!-- <script src="./src/js/librarySelfCheck/librarySelfCheck-part1/librarySelfCheckPart1.js"></script> -->
   <!-- script end -->
 </body>
 </html>

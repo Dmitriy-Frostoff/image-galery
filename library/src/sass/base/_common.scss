@@ -692,3 +692,31 @@ img {
   // Various
 
 }
+
+._overflow-hidden {
+  // Position
+
+  // block-model
+
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+  @include media-tablet-large {
+    // Position
+
+    // block-model
+
+    // Typography
+
+    // Decoration
+    overflow: hidden;
+
+    // Animation
+
+    // Various
+  }
+}

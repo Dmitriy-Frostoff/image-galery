@@ -315,7 +315,7 @@ template {
   font-family: "Forum";
 }
 
-.nav__link:hover:before, .nav__link:before, .social__link:hover path, .social__link path, .button:hover, .button:active, .button, .favorites__checker-btn-container:hover > *, .favorites__checker-btn-container, .link:hover, .link:active, .link {
+.burger-menu_active :nth-child(3), .burger-menu_active :nth-child(2), .burger-menu_active :nth-child(1), .burger-menu :nth-child(3), .burger-menu :nth-child(2), .burger-menu :nth-child(1), .social__link:hover path, .social__link path, .button:hover, .button:active, .button, .favorites__checker-btn-container:hover > *, .favorites__checker-btn-container, .nav__link:hover:before, .nav__link:before, .nav_active, .nav_position, .nav, .link:hover, .link:active, .link {
   transition: all 0.7s ease 0s;
 }
 
@@ -328,7 +328,7 @@ img, a, .code, p, pre, nav, ul, li, h1, h2, h3, h4, h5, .title {
   margin: 0;
 }
 
-.nav__user-logo, .button:hover, .button:active, .button, .favorites__checker-radio-btn, .favorites__checker-btn-container, a, .link {
+.button:hover, .button:active, .button, .favorites__checker-radio-btn, .favorites__checker-btn-container, .nav__user-logo, a, .link {
   cursor: pointer;
 }
 
@@ -653,6 +653,80 @@ img {
   display: none;
 }
 
+@media (max-width: 1024px) {
+  ._overflow-hidden {
+    overflow: hidden;
+  }
+}
+
+.nav__container {
+  column-gap: 40px;
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .nav {
+    right: -50%;
+    padding: 100px 107px;
+    background-color: #0C0C0E;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav_position {
+    position: absolute;
+    top: 0;
+  }
+}
+
+.nav_active {
+  right: 0%;
+}
+
+.nav__list {
+  column-gap: 30px;
+}
+@media (max-width: 1024px) {
+  .nav__list {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+  }
+}
+
+.nav__link {
+  position: relative;
+}
+.nav__link:before {
+  position: absolute;
+  bottom: 10px;
+  border-bottom: 3px solid #BB945F;
+  content: "";
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+}
+.nav__link:hover:before {
+  transform: scaleX(1);
+}
+
+.nav__user-logo > path {
+  transition: fill 0.7s ease 0s;
+}
+.nav__user-logo:hover > path {
+  transition: fill 0.7s ease 0s;
+  fill: #BB945F;
+}
+@media (max-width: 1024px) {
+  .nav__user-logo {
+    position: relative;
+  }
+}
+
+.nav__user-logo_z-index {
+  z-index: 100;
+}
+
 .pagination__container {
   width: 100%;
   align-items: center;
@@ -845,43 +919,62 @@ img {
   fill: #BB945F;
 }
 
+.burger-menu {
+  display: none;
+  width: 45px;
+  height: 20px;
+}
+.burger-menu :nth-child(1) {
+  width: 100%;
+  content: "";
+  transform: rotate(0);
+}
+.burger-menu :nth-child(2) {
+  width: 100%;
+  content: "";
+  transform: scale(1);
+}
+.burger-menu :nth-child(3) {
+  width: 100%;
+  content: "";
+  transform: rotate(0);
+}
+@media (max-width: 1024px) {
+  .burger-menu {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.burger-menu_position {
+  position: relative;
+  z-index: 100;
+}
+
+.burger-menu_active :nth-child(1) {
+  transform: rotate(45deg) translate(9px, 6px);
+}
+.burger-menu_active :nth-child(2) {
+  transform: scale(0);
+}
+.burger-menu_active :nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -5px);
+}
+
+.burger-menu__cutlet {
+  border-bottom: 1px solid #FFFFFF;
+}
+
 .header__container {
+  align-items: center;
   width: 100%;
   padding: 20px;
   background-color: #0C0C0E;
 }
-
-.nav__container {
-  column-gap: 40px;
-  align-items: center;
-}
-
-.nav__list {
-  column-gap: 30px;
-}
-
-.nav__link {
-  position: relative;
-}
-.nav__link:before {
-  position: absolute;
-  bottom: 10px;
-  border-bottom: 3px solid #BB945F;
-  content: "";
-  width: 100%;
-  transform: scaleX(0);
-  transform-origin: bottom left;
-}
-.nav__link:hover:before {
-  transform: scaleX(1);
-}
-
-.nav__user-logo > path {
-  transition: fill 0.7s ease 0s;
-}
-.nav__user-logo:hover > path {
-  transition: fill 0.7s ease 0s;
-  fill: #BB945F;
+@media (max-width: 1024px) {
+  .header__container {
+    position: relative;
+  }
 }
 
 .welcome {
