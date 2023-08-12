@@ -608,6 +608,11 @@ img {
   border-bottom: 1px solid #000000;
 }
 
+.title_underline-light {
+  border-bottom-color: #FFFFFF;
+  width: 100%;
+}
+
 .text_uppercase {
   text-transform: uppercase;
 }
@@ -689,7 +694,7 @@ img {
 }
 
 .favorites__checker-radio-container {
-  column-gap: 80px;
+  column-gap: 82px;
 }
 
 .favorites__checker-btn-container {
