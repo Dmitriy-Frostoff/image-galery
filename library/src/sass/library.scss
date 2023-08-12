@@ -13,12 +13,14 @@
 //base
 @import "./base/typography";
 @import "./base/common";
+@import "./base/nav";
 @import "./base/pagination";
 @import "./base/favorites-checker";
 @import "./base/book-card";
 @import "./base/buttons";
 @import "./base/check-form";
 @import "./base/social";
+@import "./base/burger-menu";
 
 //components
 @import "./components/header";
