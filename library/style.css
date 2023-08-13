@@ -1113,7 +1113,7 @@ img {
 @media (max-width: 1024px) {
   .coffee-shop__menu_right {
     min-width: 482px;
-    margin-left: 34.1145833333%;
+    margin-left: calc(100vw - 482px - 40px);
   }
 }
 
@@ -1159,6 +1159,7 @@ img {
   width: 100%;
   justify-content: space-between;
   row-gap: 100px;
+  column-gap: 100px;
 }
 @media (max-width: 1024px) {
   .contacts__info-container {
@@ -1205,6 +1206,7 @@ img {
 .library-card__contetnt-container {
   width: 100%;
   row-gap: 20px;
+  column-gap: 40px;
 }
 @media (max-width: 1024px) {
   .library-card__contetnt-container {
