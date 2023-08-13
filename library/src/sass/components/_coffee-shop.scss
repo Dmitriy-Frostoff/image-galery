@@ -46,6 +46,7 @@
 
   // block-model
   width: 100%;
+  row-gap: 40px;
   // Typography
 
   // Decoration
@@ -53,6 +54,7 @@
   // Animation
 
   // Various
+  
 }
 
 .coffee-shop__menu {
@@ -82,6 +84,19 @@
   // Animation
 
   // Various
+  @include media-tablet-large {
+    // Position
+
+    // block-model
+    min-width: 438px;
+    // Typography
+
+    // Decoration
+
+    // Animation
+
+    // Various
+  }
 }
 
 .coffee-shop__menu_right {
@@ -97,6 +112,21 @@
   // Animation
 
   // Various
+  @include media-tablet-large {
+    // Position
+
+    // block-model
+    min-width: 482px;
+    margin-left: calc(262px / 768px * 100%);
+    // Typography
+
+    // Decoration
+
+    // Animation
+
+    // Various
+  }
+
 }
 
 .coffee-shop__menu-content {
