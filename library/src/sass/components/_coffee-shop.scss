@@ -117,7 +117,7 @@
 
     // block-model
     min-width: 482px;
-    margin-left: calc(262px / 768px * 100%);
+    margin-left: calc(100vw - 482px - 2 * $padding-content-tablet);
     // Typography
 
     // Decoration
