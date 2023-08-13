@@ -1090,6 +1090,7 @@ img {
 
 .coffee-shop__menu-container {
   width: 100%;
+  row-gap: 40px;
 }
 
 .coffee-shop__menu {
@@ -1100,9 +1101,20 @@ img {
 .coffee-shop__menu_left {
   align-items: flex-start;
 }
+@media (max-width: 1024px) {
+  .coffee-shop__menu_left {
+    min-width: 438px;
+  }
+}
 
 .coffee-shop__menu_right {
   align-items: flex-end;
+}
+@media (max-width: 1024px) {
+  .coffee-shop__menu_right {
+    min-width: 482px;
+    margin-left: 34.1145833333%;
+  }
 }
 
 .coffee-shop__menu-content {
