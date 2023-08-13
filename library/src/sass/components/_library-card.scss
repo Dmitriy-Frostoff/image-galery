@@ -32,6 +32,8 @@
 
   // block-model
   width: 100%;
+  row-gap: 20px;
+
   // Typography
 
   // Decoration
@@ -39,6 +41,19 @@
   // Animation
 
   // Various
+  @include media-tablet-large {
+    // Position
+
+    // block-model
+    justify-content: center;
+    // Typography
+
+    // Decoration
+
+    // Animation
+
+    // Various
+  }
 }
 
 .library-card__check-container {
@@ -71,6 +86,21 @@
   // Animation
 
   // Various
+  @include media-tablet-large {
+    // Position
+
+    // block-model
+    max-width: 600px;
+    align-items: center;
+    row-gap: 40px;
+    // Typography
+
+    // Decoration
+
+    // Animation
+
+    // Various
+  }
 }
 
 .authorization__info {
@@ -85,6 +115,19 @@
   // Animation
 
   // Various
+  @include media-tablet-large {
+    // Position
+
+    // block-model
+    text-align: center;
+    // Typography
+
+    // Decoration
+
+    // Animation
+
+    // Various
+  }
 }
 
 .authorization__buttons-container {
@@ -101,4 +144,17 @@
   // Animation
 
   // Various
+  @include media-tablet-large {
+    // Position
+
+    // block-model
+    justify-content: center;
+    // Typography
+
+    // Decoration
+
+    // Animation
+
+    // Various
+  }
 }

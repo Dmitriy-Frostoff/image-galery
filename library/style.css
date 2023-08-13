@@ -1204,6 +1204,12 @@ img {
 
 .library-card__contetnt-container {
   width: 100%;
+  row-gap: 20px;
+}
+@media (max-width: 1024px) {
+  .library-card__contetnt-container {
+    justify-content: center;
+  }
 }
 
 .library-card__check-container {
@@ -1215,15 +1221,32 @@ img {
   align-items: flex-end;
   row-gap: 35px;
 }
+@media (max-width: 1024px) {
+  .authorization__container {
+    max-width: 600px;
+    align-items: center;
+    row-gap: 40px;
+  }
+}
 
 .authorization__info {
   text-align: right;
+}
+@media (max-width: 1024px) {
+  .authorization__info {
+    text-align: center;
+  }
 }
 
 .authorization__buttons-container {
   width: 100%;
   justify-content: flex-end;
   column-gap: 20px;
+}
+@media (max-width: 1024px) {
+  .authorization__buttons-container {
+    justify-content: center;
+  }
 }
 
 footer {
