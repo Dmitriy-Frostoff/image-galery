@@ -1158,6 +1158,13 @@ img {
 .contacts__info-container {
   width: 100%;
   justify-content: space-between;
+  row-gap: 100px;
+}
+@media (max-width: 1024px) {
+  .contacts__info-container {
+    flex-direction: column;
+    align-content: stretch;
+  }
 }
 
 .contacts__content-container {
@@ -1178,6 +1185,12 @@ img {
 .library-location {
   width: 696px;
   height: 414px;
+}
+@media (max-width: 1024px) {
+  .library-location {
+    width: 95.6043956044%;
+    align-self: center;
+  }
 }
 
 .library-card {
