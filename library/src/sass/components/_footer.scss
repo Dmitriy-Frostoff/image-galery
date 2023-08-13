@@ -28,7 +28,22 @@ footer {
   // Animation
 
   // Various
+  @include media-tablet-large {
+    & > :nth-child(2) {
+      // Position
+  
+      // block-model
+      padding-bottom: 20px;
+      // Typography
+  
+      // Decoration
+  
+      // Animation
+  
+      // Various
 
+    }
+  }
 }
 
 .footer-library__content-container {
@@ -122,7 +137,19 @@ footer {
   // Animation
 
   // Various
+  @include media-tablet-large {
+    // Position
 
+    // block-model
+    padding: 24px 0;
+    // Typography
+
+    // Decoration
+
+    // Animation
+
+    // Various
+  }
 }
 
 .footer-library__user-list {

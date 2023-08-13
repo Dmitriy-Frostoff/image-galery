@@ -42,7 +42,7 @@
 
     // Various
 
-    & :nth-child(3),  & :nth-child(4) {
+    & > :nth-child(3),  & > :nth-child(4) {
       display: none;
     }
   }
@@ -153,12 +153,12 @@
   // Animation
 
   // Various
-  & :nth-child(n + 4) {
+  & > :nth-child(n + 4) {
     display: none;
   }
 
   @include media-tablet-large {
-    & :nth-child(n + 4) {
+    & > :nth-child(n + 4) {
       display: flex;
     }
   }
