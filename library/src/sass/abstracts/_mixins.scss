@@ -78,6 +78,12 @@
   }
 }
 
+@mixin media-tablet-small {
+  @media (max-width: $width-tablet-small) {
+    @content;
+  }
+}
+
 @mixin media-tablet-minus1px {
   @media (max-width: calc($width-tablet - 1px)) {
     @content;
