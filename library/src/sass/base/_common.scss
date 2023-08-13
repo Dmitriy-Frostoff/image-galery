@@ -586,6 +586,33 @@ img {
 
 }
 
+.text_center {
+  // Position
+
+  // block-model
+
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+  @include media-tablet-large {
+    // Position
+
+    // block-model
+
+    // Typography
+    text-align: center;
+    // Decoration
+
+    // Animation
+
+    // Various
+  }
+}
+
 .text_let-space-3px {
   // Position
 
