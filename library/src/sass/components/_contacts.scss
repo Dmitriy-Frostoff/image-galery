@@ -33,6 +33,7 @@
   // block-model
   width: 100%;
   justify-content: space-between;
+  row-gap: 100px;
   // Typography
 
   // Decoration
@@ -40,6 +41,20 @@
   // Animation
 
   // Various
+  @include media-tablet-large {
+    // Position
+
+    // block-model
+    flex-direction: column;
+    align-content: stretch;
+    // Typography
+
+    // Decoration
+
+    // Animation
+
+    // Various
+  }
 }
 
 .contacts__content-container {
@@ -100,4 +115,18 @@
   // Animation
 
   // Various
+  @include media-tablet-large {
+    // Position
+
+    // block-model
+    width: calc(696px / $content-width-tablet * 100%);
+    align-self: center;
+    // Typography
+
+    // Decoration
+
+    // Animation
+
+    // Various
+  }
 }
