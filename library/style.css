@@ -874,7 +874,7 @@ img {
 }
 
 .book__paragraph {
-  width: 355px;
+  width: 358px;
   height: 320px;
 }
 
@@ -884,6 +884,7 @@ img {
 }
 
 .book__title_underline {
+  width: 60px;
   border-color: #BB945F;
 }
 
@@ -1070,6 +1071,7 @@ img {
 
 .favorites__content-container {
   column-gap: 220px;
+  justify-content: center;
   row-gap: 40px;
 }
 
