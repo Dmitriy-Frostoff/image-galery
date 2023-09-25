@@ -74,6 +74,213 @@ const audio_playerHTMLSection = (0,_utilities_htmlCreateComponentHelper__WEBPACK
 
 /***/ }),
 
+/***/ "./audio-player/src/components/components/audio-player/audioPlayerLogic.js":
+/*!*********************************************************************************!*\
+  !*** ./audio-player/src/components/components/audio-player/audioPlayerLogic.js ***!
+  \*********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   audioPlayerHandler: () => (/* binding */ audioPlayerHandler)
+/* harmony export */ });
+function audioPlayerHandler() {
+  // classnames
+  const audioPlayerButtonsContainerClassName = 'audio-player-buttons';
+
+  const audioSourseClassName = 'audioSourse';
+  const songNameClassName = 'song-name';
+  const songAuthorBandClassName = 'song-author-band';
+  const songAlbumNameClassName = 'song-album-name';
+  const songAlbumYearClassName = 'song-album-year';
+  const songAlbumCoverClassName = 'audio-player__background-image';
+
+  const songCurrentTimeClassName = 'song-duration__current';
+  const songEntireTimeClassName = 'song-duration__entire';
+
+  const songProgressClassName = 'song-progress';
+
+  const buttonPrevClassName = 'button-prev';
+  const buttonPlayClassName = 'button-play';
+  const buttonPlayInnerClassName = 'button-play-inner';
+  const buttonPauseInnerClassName = 'button-pause-inner';
+  const buttonStopClassName = 'button-stop';
+  const buttonStopInnerClassName = 'button-stop-inner';
+  const buttonNextClassName = 'button-next';
+  // HTML elements
+  const audioPlayerButtonsContainer = document.querySelector(`.${audioPlayerButtonsContainerClassName}`);
+
+  const audioSourse = document.querySelector(`.${audioSourseClassName}`);
+  const songName = document.querySelector(`.${songNameClassName}`);
+  const songAuthorBand = document.querySelector(`.${songAuthorBandClassName}`);
+  const songAlbumName = document.querySelector(`.${songAlbumNameClassName}`);
+  const songAlbumYear = document.querySelector(`.${songAlbumYearClassName}`);
+  const songAlbumCover = document.querySelector(`.${songAlbumCoverClassName}`);
+
+  const songCurrentTime = document.querySelector(`.${songCurrentTimeClassName}`);
+  const songEntireTime = document.querySelector(`.${songEntireTimeClassName}`);
+
+  const songProgress = document.querySelector(`.${songProgressClassName}`);
+
+  const buttonPrev = document.querySelector(`.${buttonPrevClassName}`);
+  const buttonPlay = document.querySelector(`.${buttonPlayClassName}`);
+  const buttonPlayInner = document.querySelector(`.${buttonPlayInnerClassName}`);
+  const buttonPauseInner = document.querySelector(`.${buttonPauseInnerClassName}`);
+  const buttonStop = document.querySelector(`.${buttonStopClassName}`);
+  const buttonStopInner = document.querySelector(`.${buttonStopInnerClassName}`);
+  const buttonNext = document.querySelector(`.${buttonNextClassName}`);
+  // abstract data
+  let isPlaying = false;
+
+  // utilities
+
+  class SongData {
+    constructor(songName, songAuthorBand, songAlbumName, songAlbumYear, songAlbumCover) {
+      this._songName = songName;
+      this._songAuthorBand = songAuthorBand;
+      this._songAlbumName = songAlbumName;
+      this._songAlbumYear = songAlbumYear;
+      this._songAlbumCover = songAlbumCover;
+    }
+
+    getSongName() {
+      return this._songName;
+    }
+
+    getSongAuthorBand() {
+      return this._songAuthorBand;
+    }
+
+    getSongAlbumName() {
+      return this._songAlbumName;
+    }
+
+    getSongAlbumYear() {
+      return this._songAlbumYear;
+    }
+
+    getSongAlbumCover() {
+      return this._songAlbumCover;
+    }
+  }
+
+  const arrayOfSongDataObj = [
+    new SongData('Giant', '01. Thunder And Lightning.mp3', 'Time To Burn', '1990', 'Cover.jpg'),
+    new SongData('Giant', '04. Stay.mp3', 'Time To Burn', '1990', 'Cover.jpg'),
+    new SongData('Axel Rudi Pell', '02. Nasty Reputation.mp3', 'Nasty Reputation', '1991', 'Cover.jpg'),
+    new SongData('Motley Crue', '02 - Girls, Girls, Girls.mp3', 'Girls, Girls, Girls', '1987', 'Cover.jpg'),
+    new SongData('Asking Alexandria', '10 - Moving On.mp3', 'From Death To Destiny', '2013', 'Cover.png'),
+    new SongData('Cinderella', `03. Nobody's Fool [1986 - Night Songs].mp3`, 'Night Songs', '1986', 'Cover.jpg'),
+    new SongData('Cinderella', `07. Somebody Save Me [1986 - Night Songs].mp3`, 'Night Songs', '1986', 'Cover.jpg'),
+    new SongData('Dokken', `05. Lightnin' Strikes Again.mp3`, 'Under Lock And Key', '1985', 'Cover.jpg'),
+    new SongData('Dokken', `14. Walk Away.mp3`, 'Beast From The East', '1988', 'Cover.jpg'),
+    new SongData('Giant', `04. I'll See You In My Dreams.mp3`, 'Last Of The Runaways', '1989', 'Cover.jpg'),
+    new SongData(`Guns'N'Roses`, `This I love (2008 Chinese Democracy).mp3`, 'Chinese Democracy', '2008', 'Cover.jpg'),
+    new SongData(`Cinderella`, `03. Don't Know What You Got (Till It's Gone) [1988 - Long Cold Winter].mp3`, 'Long Cold Winter', '1988', 'Cover.jpg'),
+    new SongData(`Helloween`, `05. Forever And One (Neverland).mp3`, 'The Time Of The Oath', '1996', 'Cover.png'),
+    new SongData(`Hellowen`, `06. A Tale That Wasn't.mp3`, 'The Legacy World Tour - Live In Sao Paulo', '2007', 'Cover.png'),
+    new SongData(`Giant`, `05. Lost In Paradise.mp3`, 'Time To Burn', '1990', 'Cover.jpg'),
+    new SongData(`MSG`, `09. Anytime [single edit, bonus] [1989 - Save Yourself].mp3`, 'Save Yourself', '1989', 'Cover.jpg'),
+    new SongData(`Skid Row`, `04. Quicksand Jesus [1991 - Slave To The Grind].mp3`, 'Slave To The Grind', '1991', 'Cover.jpg'),
+    new SongData(`Steelheart`, `09. She's Gone (Lady) [1990 - Steelheart].mp3`, 'Steelheart', '1990', 'Cover.jpg'),
+    new SongData(`Wasp`, `08. The Idol (1992 -The Crimson Idol).mp3`, 'The Crimson Idol', '1992', 'Cover.jpg'),
+    new SongData(`Wasp`, `09. Hold On To My Heart (1992 -The Crimson Idol).mp3`, 'The Crimson Idol', '1992', 'Cover.jpg'),
+    new SongData(`Stone Sour`, `14. Stone Sour - Wicked Game (Acoustic).mp3`, 'Come What (Ever) May', '2006', 'Cover.jpg'),
+    new SongData(`Yngwie J. Malmsteen`, `04. Forever One.mp3`, 'The Seventh Sign', '1994', 'Cover.jpg'),
+    new SongData(`Whitesnake`, `05. Til The End Of Time.mp3`, 'Best Ballads', '2014', 'Cover.jpg'),
+    new SongData(`Whitesnake`, `09. Sailing Ships.mp3`, 'Best Ballads', '2014', 'Cover.jpg'),
+    new SongData(`ария`, `01. Всё, Что Было.mp3`, 'Золотые Баллады', '2011', 'Cover.jpg'),
+    new SongData(`Кипелов & Маврин`, `04. Я Свободен!.mp3`, 'Смутное Время', '1997', 'Cover.jpg'),
+    new SongData(`nobody.one`, `08 - The Duck Song.mp3`, 'head movies', '2010', 'Cover.jpg'),
+  ]
+
+  function playbackAudio() {
+    isPlaying = true;
+    buttonPlayInner.classList.add('button_hidden');
+    buttonPauseInner.classList.remove('button_hidden');
+    audioSourse.play();
+  }
+
+  function pausePlaybackAudio() {
+    isPlaying = false;
+    buttonPlayInner.classList.remove('button_hidden');
+    buttonPauseInner.classList.add('button_hidden');
+    audioSourse.pause();
+  }
+  
+  function changeVisualizationOfSongTime(timeInSeconds) {
+    function getMinutes(timeInSeconds) {
+      // 263.183673s => 4 minutes (precisely 4.38639455 minutes)
+      return Math.trunc(timeInSeconds / 60);
+    }
+
+    function getRoundedTwoSignsSeconds(timeInSeconds) {
+      // 263.183673s => the remainder of minutes is 23 seconds (precisely 23.183673 seconds)
+      // e.g. 3 seconds => 03 seconds;
+      return `${Math.trunc(timeInSeconds % 60)}`.padStart(2, '0');
+    }
+
+    return `${getMinutes(timeInSeconds)}:${getRoundedTwoSignsSeconds(timeInSeconds)}`;
+  }
+
+  function handleSongTime() {
+    // time in seconds! e.g. 0.000;
+    let currentSongTime = audioSourse.currentTime;
+    // time in seconds! e.g. 263.183673;
+    let entireSongTime = audioSourse.duration;
+
+    // format song time, string
+    currentSongTime = changeVisualizationOfSongTime(currentSongTime);
+    entireSongTime = changeVisualizationOfSongTime(entireSongTime);
+
+    // set time (string) into HTML elements
+    songCurrentTime.innerText = currentSongTime;
+    songEntireTime.innerText = entireSongTime;
+
+    // call function recursively
+    setTimeout(handleSongTime, 1000);
+  }
+
+  function musicPlayback() {
+    if (!isPlaying) {
+      playbackAudio();
+      setTimeout(() => handleSongTime(), 1000);
+    } else {
+      pausePlaybackAudio();
+      setTimeout(() => handleSongTime(), 1000);
+    }
+  }
+
+  function musicStop() {
+    pausePlaybackAudio();
+    
+    // time in seconds! e.g. 0.000;
+    audioSourse.currentTime = 0;
+    // set time (string) into HTML elements
+    songCurrentTime.innerText = changeVisualizationOfSongTime(audioSourse.currentTime);
+  }
+
+  // realization of music player logic
+  audioPlayerButtonsContainer.addEventListener('click', (event) => {
+    // handle playing music
+    if (event.target.closest(`.${buttonPlayClassName}`)) {
+      musicPlayback();
+    }
+
+    // handle stop music
+    if (event.target.closest(`.${buttonStopClassName}`)) {
+      musicStop();
+    }
+  })
+
+  // console.log( getComputedStyle(songAlbumCover).backgroundImage );
+  // songAlbumCover.style.backgroundImage = `url("http://localhost:8080/src/assets/audio/Giant%201990%20-%20Time%20To%20Burn/Cover%20(2).jpg")`;
+  // console.log( getCommonPathForSongsAndAlbumCovers(songAlbumCover) );
+}
+
+/***/ }),
+
 /***/ "./audio-player/src/components/components/footer/footer.js":
 /*!*****************************************************************!*\
   !*** ./audio-player/src/components/components/footer/footer.js ***!
@@ -165,7 +372,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___HTML_LOADER_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../../assets/audio/Giant 1990 - Time To Burn/01. Thunder And Lightning.mp3 */ "./audio-player/src/assets/audio/Giant 1990 - Time To Burn/01. Thunder And Lightning.mp3"), __webpack_require__.b);
 // Module
 var ___HTML_LOADER_REPLACEMENT_0___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_0___);
-var code = "<div class=\"audio-player\">\r\n  <div class=\"layout-one-column audio-player__container\">\r\n    <div class=\"layout-one-column audio-player__media-container\">\r\n      <div class=\"text-l text_fweight700 text_let-space-0d08px audio-player__heading\">Now Playing</div>\r\n      <div class=\"audio-player__background-image\">&nbsp;</div>\r\n      <div class=\"layout-one-column song-info _overflow-hidden\">\r\n        <div class=\"text-xl text_fweight700 text_let-space-0d13px song-name\">01. Thunder And Lightning</div>\r\n        <div class=\"text-m text_fweight600 text_let-space-0d08px text_dark-details song-author-band\">Giant</div>\r\n        <div class=\"text-m text_fweight600 text_let-space-0d08px text_dark-details song-album-name\"> Time To Burn</div>\r\n        <div class=\"text-m text_fweight600 text_let-space-0d08px text_dark-details song-album-year\">1990</div>\r\n      </div>\r\n      <div class=\"layout-one-column song-progress-bar\">\r\n        <div class=\"song-progress\">\r\n          <audio src='" + ___HTML_LOADER_REPLACEMENT_0___ + "'></audio>\r\n        </div>\r\n      </div>\r\n      <div class=\"layout-multiple-columns song-duration__container\">\r\n        <div class=\"text-s text_fweight500 text_let-space-0d08px text_dark-details song-duration__current\">1:46</div>\r\n        <div class=\"text-s text_fweight500 text_let-space-0d08px text_dark-details song-duration__entire\">3:40</div>\r\n      </div>\r\n    </div>\r\n    <div class=\"layout-multiple-columns audio-player-buttons\">\r\n      <div class=\"button button-prev\">\r\n        <svg class=\"button-prev-inner\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\r\n          <path d=\"M25.1377 6.78532C25.5778 6.46017 26.2006 6.77434 26.2006 7.32151V24.6785C26.2006 25.2257 25.5778 25.5398 25.1377 25.2147L13.3924 16.5358C13.0318 16.2693 13.0318 15.7299 13.3924 15.4634L25.1377 6.78532Z\" fill=\"#F5F5F5\"/>\r\n          <path d=\"M8.00004 6.6667C8.36823 6.6667 8.66671 6.96518 8.66671 7.33337V24.6667C8.66671 25.0349 8.36823 25.3334 8.00004 25.3334H6.00004C5.63185 25.3334 5.33337 25.0349 5.33337 24.6667V7.33337C5.33337 6.96518 5.63185 6.6667 6.00004 6.6667H8.00004Z\" fill=\"#F5F5F5\"/>\r\n          </svg>\r\n      </div>\r\n      <div class=\"button button-play\">\r\n        <svg class=\"button-play-inner\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\r\n          <path d=\"M10.6666 6.6548C10.6666 6.10764 11.2894 5.79346 11.7295 6.11861L24.377 15.4634C24.7377 15.7298 24.7377 16.2692 24.377 16.5357L11.7295 25.8813C11.2894 26.2065 10.6666 25.8923 10.6666 25.3451L10.6666 6.6548Z\"/>\r\n        </svg>\r\n        <svg class=\"button-pause-inner button_hidden\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\r\n          <path d=\"M8.66667 6.66667C8.29848 6.66667 8 6.96514 8 7.33333V24.6667C8 25.0349 8.29848 25.3333 8.66667 25.3333H12.6667C13.0349 25.3333 13.3333 25.0349 13.3333 24.6667V7.33333C13.3333 6.96514 13.0349 6.66667 12.6667 6.66667H8.66667Z\" fill=\"#F5F5F5\"/>\r\n          <path d=\"M19.3333 6.66667C18.9651 6.66667 18.6667 6.96514 18.6667 7.33333V24.6667C18.6667 25.0349 18.9651 25.3333 19.3333 25.3333H23.3333C23.7015 25.3333 24 25.0349 24 24.6667V7.33333C24 6.96514 23.7015 6.66667 23.3333 6.66667H19.3333Z\" fill=\"#F5F5F5\"/>\r\n        </svg>\r\n      </div>\r\n      <div class=\"button button-next\">\r\n        <svg class=\"button-next-inner\"  width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\r\n          <path d=\"M6.39621 6.78532C5.95613 6.46017 5.33337 6.77434 5.33337 7.32151V24.6785C5.33337 25.2257 5.95616 25.5398 6.39623 25.2147L18.1415 16.5358C18.5022 16.2693 18.5022 15.7299 18.1415 15.4634L6.39621 6.78532Z\" fill=\"#F5F5F5\"/>\r\n          <path d=\"M23.5339 6.6667C23.1657 6.6667 22.8672 6.96518 22.8672 7.33337V24.6667C22.8672 25.0349 23.1657 25.3334 23.5339 25.3334H25.5339C25.9021 25.3334 26.2006 25.0349 26.2006 24.6667V7.33337C26.2006 6.96518 25.9021 6.6667 25.5339 6.6667H23.5339Z\" fill=\"#F5F5F5\"/>\r\n          </svg>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>";
+var code = "<div class=\"audio-player\">\r\n  <div class=\"layout-one-column audio-player__container\">\r\n    <div class=\"layout-one-column audio-player__media-container\">\r\n      <div class=\"text-l text_fweight700 text_let-space-0d08px audio-player__heading\">Now Playing</div>\r\n      <div class=\"audio-player__background-image\">&nbsp;</div>\r\n      <div class=\"layout-one-column song-info _overflow-hidden\">\r\n        <div class=\"text-xl text_fweight700 text_let-space-0d13px song-name\">01. Thunder And Lightning</div>\r\n        <div class=\"text-m text_fweight600 text_let-space-0d08px text_dark-details song-author-band\">Giant</div>\r\n        <div class=\"text-m text_fweight600 text_let-space-0d08px text_dark-details song-album-name\"> Time To Burn</div>\r\n        <div class=\"text-m text_fweight600 text_let-space-0d08px text_dark-details song-album-year\">1990</div>\r\n      </div>\r\n      <audio class=\"audioSourse\" src='" + ___HTML_LOADER_REPLACEMENT_0___ + "'></audio>\r\n      <div class=\"layout-one-column song-progress-bar\">\r\n        <div class=\"song-progress\"></div>\r\n      </div>\r\n      <div class=\"layout-multiple-columns song-duration__container\">\r\n        <div class=\"text-s text_fweight500 text_let-space-0d08px text_dark-details song-duration__current\">0:00</div>\r\n        <div class=\"text-s text_fweight500 text_let-space-0d08px text_dark-details song-duration__entire\">3:40</div>\r\n      </div>\r\n    </div>\r\n    <div class=\"layout-multiple-columns audio-player-buttons\">\r\n      <div class=\"button button-prev\">\r\n        <svg class=\"button-prev-inner\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\r\n          <path d=\"M25.1377 6.78532C25.5778 6.46017 26.2006 6.77434 26.2006 7.32151V24.6785C26.2006 25.2257 25.5778 25.5398 25.1377 25.2147L13.3924 16.5358C13.0318 16.2693 13.0318 15.7299 13.3924 15.4634L25.1377 6.78532Z\" />\r\n          <path d=\"M8.00004 6.6667C8.36823 6.6667 8.66671 6.96518 8.66671 7.33337V24.6667C8.66671 25.0349 8.36823 25.3334 8.00004 25.3334H6.00004C5.63185 25.3334 5.33337 25.0349 5.33337 24.6667V7.33337C5.33337 6.96518 5.63185 6.6667 6.00004 6.6667H8.00004Z\"/>\r\n          </svg>\r\n      </div>\r\n      <div class=\"button button-play\">\r\n        <svg class=\"button-play-inner\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\r\n          <path d=\"M10.6666 6.6548C10.6666 6.10764 11.2894 5.79346 11.7295 6.11861L24.377 15.4634C24.7377 15.7298 24.7377 16.2692 24.377 16.5357L11.7295 25.8813C11.2894 26.2065 10.6666 25.8923 10.6666 25.3451L10.6666 6.6548Z\"/>\r\n        </svg>\r\n        <svg class=\"button-pause-inner button_hidden\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\r\n          <path d=\"M8.66667 6.66667C8.29848 6.66667 8 6.96514 8 7.33333V24.6667C8 25.0349 8.29848 25.3333 8.66667 25.3333H12.6667C13.0349 25.3333 13.3333 25.0349 13.3333 24.6667V7.33333C13.3333 6.96514 13.0349 6.66667 12.6667 6.66667H8.66667Z\"/>\r\n          <path d=\"M19.3333 6.66667C18.9651 6.66667 18.6667 6.96514 18.6667 7.33333V24.6667C18.6667 25.0349 18.9651 25.3333 19.3333 25.3333H23.3333C23.7015 25.3333 24 25.0349 24 24.6667V7.33333C24 6.96514 23.7015 6.66667 23.3333 6.66667H19.3333Z\"/>\r\n        </svg>\r\n      </div>\r\n      <div class=\"button button-stop\">\r\n        <svg class=\"button-stop-inner\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\r\n          <path d=\"M8.66667 8C8.29848 8 8 8.29848 8 8.66667V23.3333C8 23.7015 8.29848 24 8.66667 24H23.3333C23.7015 24 24 23.7015 24 23.3333V8.66667C24 8.29848 23.7015 8 23.3333 8H8.66667Z\"/>\r\n          </svg>\r\n      </div>\r\n      <div class=\"button button-next\">\r\n        <svg class=\"button-next-inner\"  width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\r\n          <path d=\"M6.39621 6.78532C5.95613 6.46017 5.33337 6.77434 5.33337 7.32151V24.6785C5.33337 25.2257 5.95616 25.5398 6.39623 25.2147L18.1415 16.5358C18.5022 16.2693 18.5022 15.7299 18.1415 15.4634L6.39621 6.78532Z\" />\r\n          <path d=\"M23.5339 6.6667C23.1657 6.6667 22.8672 6.96518 22.8672 7.33337V24.6667C22.8672 25.0349 23.1657 25.3334 23.5339 25.3334H25.5339C25.9021 25.3334 26.2006 25.0349 26.2006 24.6667V7.33337C26.2006 6.96518 25.9021 6.6667 25.5339 6.6667H23.5339Z\"/>\r\n          </svg>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>";
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);
 
@@ -402,6 +609,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_footer_footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/footer/footer */ "./audio-player/src/components/components/footer/footer.js");
 /* harmony import */ var _audioPlayerSelfCheck_audioPlayerSelfCheck__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./audioPlayerSelfCheck/audioPlayerSelfCheck */ "./audio-player/src/components/audioPlayerSelfCheck/audioPlayerSelfCheck.js");
 /* harmony import */ var _audioPlayerSelfCheck_audioPlayerSelfCheck__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_audioPlayerSelfCheck_audioPlayerSelfCheck__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _components_audio_player_audioPlayerLogic__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/audio-player/audioPlayerLogic */ "./audio-player/src/components/components/audio-player/audioPlayerLogic.js");
 
 
 
@@ -411,6 +619,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 // self - check
+
+
+// logic and utilities
 
 
 // HTML elements
@@ -426,10 +637,10 @@ body.append(_components_footer_footer__WEBPACK_IMPORTED_MODULE_4__.footerHTMLSec
 
 // functions realization
 window.addEventListener('load', () => {
-  
+  (0,_components_audio_player_audioPlayerLogic__WEBPACK_IMPORTED_MODULE_6__.audioPlayerHandler)();
 })
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=main.8c3c.js.map
+//# sourceMappingURL=main.5433.js.map

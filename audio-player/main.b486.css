@@ -318,11 +318,11 @@ template {
   backdrop-filter: blur(35px);
 }
 
-.footer__icon:hover, .footer__link:hover, .footer__link:hover .footer__icon, .footer__link:hover .github-text, .footer__link:active, .footer__link:active .footer__icon, .footer__link:active .github-text, .footer__link, .button-next-inner, .button-pause-inner, .button-play-inner, .button-prev-inner, .button:active, .button:hover, .button, .link:hover, .link:active, .link {
+.footer__icon:hover, .footer__link:hover, .footer__link:hover .footer__icon, .footer__link:hover .github-text, .footer__link:active, .footer__link:active .footer__icon, .footer__link:active .github-text, .footer__link, .button-next-inner, .button-stop-inner, .button-pause-inner, .button-play-inner, .button-prev-inner, .button:active, .button:hover, .button, .link:hover, .link:active, .link {
   transition: all 0.7s ease 0s;
 }
 
-.github-text, .footer__icon, .button-next-inner, .button-pause-inner, .button-play-inner, .button-prev-inner {
+.github-text, .footer__icon, .button-next-inner, .button-stop-inner, .button-pause-inner, .button-play-inner, .button-prev-inner {
   pointer-events: none;
 }
 
@@ -696,6 +696,10 @@ img {
   fill: #E5E5E5;
 }
 
+.button-stop-inner > path {
+  fill: #E5E5E5;
+}
+
 .button-next-inner > path {
   fill: #E5E5E5;
 }
@@ -894,4 +898,4 @@ footer {
   }
 }
 
-/*# sourceMappingURL=main.dbc1.css.map*/
+/*# sourceMappingURL=main.b486.css.map*/
