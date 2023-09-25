@@ -678,7 +678,7 @@ img {
 }
 
 .audio-player-buttons {
-  width: 40vw;
+  width: 80%;
   flex-wrap: nowrap;
   justify-content: center;
   column-gap: 1vw;
@@ -728,7 +728,7 @@ img {
 }
 
 .audio-player__media-container {
-  width: 40vw;
+  width: 80%;
   align-items: center;
   row-gap: 2vh;
 }
@@ -743,7 +743,7 @@ img {
 }
 
 .song-info {
-  width: 40vw;
+  width: 100%;
   row-gap: 1vh;
   align-items: center;
 }
@@ -894,4 +894,4 @@ footer {
   }
 }
 
-/*# sourceMappingURL=main.afff.css.map*/
+/*# sourceMappingURL=main.dbc1.css.map*/
