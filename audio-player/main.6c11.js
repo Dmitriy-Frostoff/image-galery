@@ -9,54 +9,54 @@
 
 var map = {
 	"./Asking Alexandria 2013 - From Death To Destiny/10 - Moving On.mp3": "./audio-player/src/assets/audio/Asking Alexandria 2013 - From Death To Destiny/10 - Moving On.mp3",
-	"./Asking Alexandria 2013 - From Death To Destiny/Cover.png": "./audio-player/src/assets/audio/Asking Alexandria 2013 - From Death To Destiny/Cover.png",
+	"./Asking Alexandria 2013 - From Death To Destiny/2013 - From Death To Destiny Cover.png": "./audio-player/src/assets/audio/Asking Alexandria 2013 - From Death To Destiny/2013 - From Death To Destiny Cover.png",
 	"./Axel Rudi Pell 1991 - Nasty Reputation/02. Nasty Reputation.mp3": "./audio-player/src/assets/audio/Axel Rudi Pell 1991 - Nasty Reputation/02. Nasty Reputation.mp3",
-	"./Axel Rudi Pell 1991 - Nasty Reputation/Cover.jpg": "./audio-player/src/assets/audio/Axel Rudi Pell 1991 - Nasty Reputation/Cover.jpg",
+	"./Axel Rudi Pell 1991 - Nasty Reputation/1991 - Nasty Reputation Cover.jpg": "./audio-player/src/assets/audio/Axel Rudi Pell 1991 - Nasty Reputation/1991 - Nasty Reputation Cover.jpg",
 	"./Cinderella 1986 - Night Songs/03. Nobody's Fool [1986 - Night Songs].mp3": "./audio-player/src/assets/audio/Cinderella 1986 - Night Songs/03. Nobody's Fool [1986 - Night Songs].mp3",
 	"./Cinderella 1986 - Night Songs/07. Somebody Save Me [1986 - Night Songs].mp3": "./audio-player/src/assets/audio/Cinderella 1986 - Night Songs/07. Somebody Save Me [1986 - Night Songs].mp3",
-	"./Cinderella 1986 - Night Songs/Cover.jpg": "./audio-player/src/assets/audio/Cinderella 1986 - Night Songs/Cover.jpg",
+	"./Cinderella 1986 - Night Songs/1986 - Night Songs Cover.jpg": "./audio-player/src/assets/audio/Cinderella 1986 - Night Songs/1986 - Night Songs Cover.jpg",
 	"./Cinderella 1988 - Long Cold Winter/03. Don't Know What You Got (Till It's Gone) [1988 - Long Cold Winter].mp3": "./audio-player/src/assets/audio/Cinderella 1988 - Long Cold Winter/03. Don't Know What You Got (Till It's Gone) [1988 - Long Cold Winter].mp3",
-	"./Cinderella 1988 - Long Cold Winter/Cover.jpg": "./audio-player/src/assets/audio/Cinderella 1988 - Long Cold Winter/Cover.jpg",
+	"./Cinderella 1988 - Long Cold Winter/1988 - Long Cold Winter Cover.jpg": "./audio-player/src/assets/audio/Cinderella 1988 - Long Cold Winter/1988 - Long Cold Winter Cover.jpg",
 	"./Dokken 1985 - Under Lock And Key/05. Lightnin' Strikes Again.mp3": "./audio-player/src/assets/audio/Dokken 1985 - Under Lock And Key/05. Lightnin' Strikes Again.mp3",
-	"./Dokken 1985 - Under Lock And Key/Cover.jpg": "./audio-player/src/assets/audio/Dokken 1985 - Under Lock And Key/Cover.jpg",
+	"./Dokken 1985 - Under Lock And Key/1985 - Under Lock And Key Cover.jpg": "./audio-player/src/assets/audio/Dokken 1985 - Under Lock And Key/1985 - Under Lock And Key Cover.jpg",
 	"./Dokken 1988 - Beast From The East/14. Walk Away.mp3": "./audio-player/src/assets/audio/Dokken 1988 - Beast From The East/14. Walk Away.mp3",
-	"./Dokken 1988 - Beast From The East/Cover.jpg": "./audio-player/src/assets/audio/Dokken 1988 - Beast From The East/Cover.jpg",
+	"./Dokken 1988 - Beast From The East/1988 - Beast From The East Cover.jpg": "./audio-player/src/assets/audio/Dokken 1988 - Beast From The East/1988 - Beast From The East Cover.jpg",
 	"./Giant 1989 - Last Of The Runaways/04. I'll See You In My Dreams.mp3": "./audio-player/src/assets/audio/Giant 1989 - Last Of The Runaways/04. I'll See You In My Dreams.mp3",
-	"./Giant 1989 - Last Of The Runaways/Cover.jpg": "./audio-player/src/assets/audio/Giant 1989 - Last Of The Runaways/Cover.jpg",
+	"./Giant 1989 - Last Of The Runaways/1989 - Last Of The Runaways Cover.jpg": "./audio-player/src/assets/audio/Giant 1989 - Last Of The Runaways/1989 - Last Of The Runaways Cover.jpg",
 	"./Giant 1990 - Time To Burn/01. Thunder And Lightning.mp3": "./audio-player/src/assets/audio/Giant 1990 - Time To Burn/01. Thunder And Lightning.mp3",
 	"./Giant 1990 - Time To Burn/04. Stay.mp3": "./audio-player/src/assets/audio/Giant 1990 - Time To Burn/04. Stay.mp3",
 	"./Giant 1990 - Time To Burn/05. Lost In Paradise.mp3": "./audio-player/src/assets/audio/Giant 1990 - Time To Burn/05. Lost In Paradise.mp3",
-	"./Giant 1990 - Time To Burn/Cover.jpg": "./audio-player/src/assets/audio/Giant 1990 - Time To Burn/Cover.jpg",
-	"./GnR 2008 - Chinese Democracy/Cover.jpg": "./audio-player/src/assets/audio/GnR 2008 - Chinese Democracy/Cover.jpg",
+	"./Giant 1990 - Time To Burn/1990 - Time To Burn.jpg": "./audio-player/src/assets/audio/Giant 1990 - Time To Burn/1990 - Time To Burn.jpg",
+	"./GnR 2008 - Chinese Democracy/2008 - Chinese Democracy Cover.jpg": "./audio-player/src/assets/audio/GnR 2008 - Chinese Democracy/2008 - Chinese Democracy Cover.jpg",
 	"./GnR 2008 - Chinese Democracy/This I love (2008 Chinese Democracy).mp3": "./audio-player/src/assets/audio/GnR 2008 - Chinese Democracy/This I love (2008 Chinese Democracy).mp3",
 	"./Helloween 1996 - The Time Of The Oath/05. Forever And One (Neverland).mp3": "./audio-player/src/assets/audio/Helloween 1996 - The Time Of The Oath/05. Forever And One (Neverland).mp3",
-	"./Helloween 1996 - The Time Of The Oath/Cover.png": "./audio-player/src/assets/audio/Helloween 1996 - The Time Of The Oath/Cover.png",
+	"./Helloween 1996 - The Time Of The Oath/1996 - The Time Of The Oath Cover.png": "./audio-player/src/assets/audio/Helloween 1996 - The Time Of The Oath/1996 - The Time Of The Oath Cover.png",
 	"./Hellowen 2007 - Keeper... - The Legacy World Tour - Live In Sao Paulo/06. A Tale That Wasn't.mp3": "./audio-player/src/assets/audio/Hellowen 2007 - Keeper... - The Legacy World Tour - Live In Sao Paulo/06. A Tale That Wasn't.mp3",
-	"./Hellowen 2007 - Keeper... - The Legacy World Tour - Live In Sao Paulo/Cover.png": "./audio-player/src/assets/audio/Hellowen 2007 - Keeper... - The Legacy World Tour - Live In Sao Paulo/Cover.png",
+	"./Hellowen 2007 - Keeper... - The Legacy World Tour - Live In Sao Paulo/2007 - The Legacy World Tour - Live In Sao Paulo Cover.png": "./audio-player/src/assets/audio/Hellowen 2007 - Keeper... - The Legacy World Tour - Live In Sao Paulo/2007 - The Legacy World Tour - Live In Sao Paulo Cover.png",
 	"./MSG 1989 - Save Yourself/09. Anytime [single edit, bonus] [1989 - Save Yourself].mp3": "./audio-player/src/assets/audio/MSG 1989 - Save Yourself/09. Anytime [single edit, bonus] [1989 - Save Yourself].mp3",
-	"./MSG 1989 - Save Yourself/Cover.jpg": "./audio-player/src/assets/audio/MSG 1989 - Save Yourself/Cover.jpg",
+	"./MSG 1989 - Save Yourself/1989 - Save Yourself Cover.jpg": "./audio-player/src/assets/audio/MSG 1989 - Save Yourself/1989 - Save Yourself Cover.jpg",
 	"./Motley Crue 1987 - Girls, Girls, Girls/02 - Girls, Girls, Girls.mp3": "./audio-player/src/assets/audio/Motley Crue 1987 - Girls, Girls, Girls/02 - Girls, Girls, Girls.mp3",
-	"./Motley Crue 1987 - Girls, Girls, Girls/Cover.jpg": "./audio-player/src/assets/audio/Motley Crue 1987 - Girls, Girls, Girls/Cover.jpg",
+	"./Motley Crue 1987 - Girls, Girls, Girls/1987 - Girls, Girls, Girls Cover.jpg": "./audio-player/src/assets/audio/Motley Crue 1987 - Girls, Girls, Girls/1987 - Girls, Girls, Girls Cover.jpg",
 	"./Skid Row 1991 - Slave To The Grind/04. Quicksand Jesus [1991 - Slave To The Grind].mp3": "./audio-player/src/assets/audio/Skid Row 1991 - Slave To The Grind/04. Quicksand Jesus [1991 - Slave To The Grind].mp3",
-	"./Skid Row 1991 - Slave To The Grind/Cover.jpg": "./audio-player/src/assets/audio/Skid Row 1991 - Slave To The Grind/Cover.jpg",
+	"./Skid Row 1991 - Slave To The Grind/1991 - Slave To The Grind Cover.jpg": "./audio-player/src/assets/audio/Skid Row 1991 - Slave To The Grind/1991 - Slave To The Grind Cover.jpg",
 	"./Steelheart 1990 - Steelheart/09. She's Gone (Lady) [1990 - Steelheart].mp3": "./audio-player/src/assets/audio/Steelheart 1990 - Steelheart/09. She's Gone (Lady) [1990 - Steelheart].mp3",
-	"./Steelheart 1990 - Steelheart/Cover.jpg": "./audio-player/src/assets/audio/Steelheart 1990 - Steelheart/Cover.jpg",
+	"./Steelheart 1990 - Steelheart/1990 - Steelheart Cover.jpg": "./audio-player/src/assets/audio/Steelheart 1990 - Steelheart/1990 - Steelheart Cover.jpg",
 	"./Stone Sour 2006 - Come What (Ever) May/14. Stone Sour - Wicked Game (Acoustic).mp3": "./audio-player/src/assets/audio/Stone Sour 2006 - Come What (Ever) May/14. Stone Sour - Wicked Game (Acoustic).mp3",
-	"./Stone Sour 2006 - Come What (Ever) May/Cover.jpg": "./audio-player/src/assets/audio/Stone Sour 2006 - Come What (Ever) May/Cover.jpg",
+	"./Stone Sour 2006 - Come What (Ever) May/2006 - Come What (Ever) May Cover.jpg": "./audio-player/src/assets/audio/Stone Sour 2006 - Come What (Ever) May/2006 - Come What (Ever) May Cover.jpg",
 	"./Wasp 1992 -The Crimson Idol/08. The Idol (1992 -The Crimson Idol).mp3": "./audio-player/src/assets/audio/Wasp 1992 -The Crimson Idol/08. The Idol (1992 -The Crimson Idol).mp3",
 	"./Wasp 1992 -The Crimson Idol/09. Hold On To My Heart (1992 -The Crimson Idol).mp3": "./audio-player/src/assets/audio/Wasp 1992 -The Crimson Idol/09. Hold On To My Heart (1992 -The Crimson Idol).mp3",
-	"./Wasp 1992 -The Crimson Idol/Cover.jpg": "./audio-player/src/assets/audio/Wasp 1992 -The Crimson Idol/Cover.jpg",
+	"./Wasp 1992 -The Crimson Idol/1992 -The Crimson Idol Cover.jpg": "./audio-player/src/assets/audio/Wasp 1992 -The Crimson Idol/1992 -The Crimson Idol Cover.jpg",
 	"./Whitesnake 2014 -Best Ballads/05. Til The End Of Time.mp3": "./audio-player/src/assets/audio/Whitesnake 2014 -Best Ballads/05. Til The End Of Time.mp3",
 	"./Whitesnake 2014 -Best Ballads/09. Sailing Ships.mp3": "./audio-player/src/assets/audio/Whitesnake 2014 -Best Ballads/09. Sailing Ships.mp3",
-	"./Whitesnake 2014 -Best Ballads/Cover.jpg": "./audio-player/src/assets/audio/Whitesnake 2014 -Best Ballads/Cover.jpg",
+	"./Whitesnake 2014 -Best Ballads/2014 -Best Ballads Cover.jpg": "./audio-player/src/assets/audio/Whitesnake 2014 -Best Ballads/2014 -Best Ballads Cover.jpg",
 	"./YJM 1994 - The Seventh Sign/04. Forever One.mp3": "./audio-player/src/assets/audio/YJM 1994 - The Seventh Sign/04. Forever One.mp3",
-	"./YJM 1994 - The Seventh Sign/Cover.jpg": "./audio-player/src/assets/audio/YJM 1994 - The Seventh Sign/Cover.jpg",
+	"./YJM 1994 - The Seventh Sign/1994 - The Seventh Sign Cover.jpg": "./audio-player/src/assets/audio/YJM 1994 - The Seventh Sign/1994 - The Seventh Sign Cover.jpg",
 	"./nobody.one 2010 - head movies/08 - The Duck Song.mp3": "./audio-player/src/assets/audio/nobody.one 2010 - head movies/08 - The Duck Song.mp3",
-	"./nobody.one 2010 - head movies/Cover.jpg": "./audio-player/src/assets/audio/nobody.one 2010 - head movies/Cover.jpg",
+	"./nobody.one 2010 - head movies/2010 - head movies Cover.jpg": "./audio-player/src/assets/audio/nobody.one 2010 - head movies/2010 - head movies Cover.jpg",
 	"./Кипелов and Маврин 1997 - Смутное Время/04. Я Свободен.mp3": "./audio-player/src/assets/audio/Кипелов and Маврин 1997 - Смутное Время/04. Я Свободен.mp3",
-	"./Кипелов and Маврин 1997 - Смутное Время/Cover.jpg": "./audio-player/src/assets/audio/Кипелов and Маврин 1997 - Смутное Время/Cover.jpg",
+	"./Кипелов and Маврин 1997 - Смутное Время/1997 - Смутное Время Cover.jpg": "./audio-player/src/assets/audio/Кипелов and Маврин 1997 - Смутное Время/1997 - Смутное Время Cover.jpg",
 	"./ария 2011 - Золотые Баллады/01. Всё, Что Было.mp3": "./audio-player/src/assets/audio/ария 2011 - Золотые Баллады/01. Всё, Что Было.mp3",
-	"./ария 2011 - Золотые Баллады/Cover.jpg": "./audio-player/src/assets/audio/ария 2011 - Золотые Баллады/Cover.jpg"
+	"./ария 2011 - Золотые Баллады/2011 - Золотые Баллады Cover.jpg": "./audio-player/src/assets/audio/ария 2011 - Золотые Баллады/2011 - Золотые Баллады Cover.jpg"
 };
 
 
@@ -88,7 +88,67 @@ webpackContext.id = "./audio-player/src/assets/audio sync recursive \\.(png%7Cjp
 /***/ (() => {
 
 console.log(`
-Привет!) Я ещё доделываю работу и надеюсь на твоё понимание) Плейлист состоит из rock, glam-metal, heavy - metal, instrumental rock песен и баллад.
+Привет!) Самооценка в самом низу.
+
+Плейлист состоит из rock, glam-metal, heavy - metal, metalcore, instrumental rock, acoustic песен и баллад. TODO, что ещё хочу сделать - внизу (реализую уже после дедлайна...). Приятного прослушивания!)))
+P.S. много классных медляков ближе к концу))
+
+Трек лист по порядку: 
+      Songs=27
+      Giant 1990 - Time To Burn/01. Thunder And Lightning.mp3
+
+      Giant 1990 - Time To Burn/04. Stay.mp3
+
+      Axel Rudi Pell 1991 - Nasty Reputation/02. Nasty Reputation.mp3
+
+      Motley Crue 1987 - Girls, Girls, Girls/02 - Girls, Girls, Girls.mp3
+
+      Asking Alexandria 2013 - From Death To Destiny/10 - Moving On.mp3
+
+      Cinderella 1986 - Night Songs/03. Nobody's Fool [1986 - Night Songs].mp3
+
+      Cinderella 1986 - Night Songs/07. Somebody Save Me [1986 - Night Songs].mp3
+
+      Dokken 1985 - Under Lock And Key/05. Lightnin' Strikes Again.mp3
+
+      Dokken 1988 - Beast From The East/14. Walk Away.mp3
+
+      Giant 1989 - Last Of The Runaways/04. I'll See You In My Dreams.mp3
+
+      Guns'n'Roses 2008 - Chinese Democracy/This I love (2008 Chinese Democracy).mp3
+
+      Cinderella 1988 - Long Cold Winter/03. Don't Know What You Got (Till It's Gone) [1988 - Long Cold Winter].mp3
+
+      Helloween 1996 - The Time Of The Oath/05. Forever And One (Neverland).mp3
+
+      Hellowen 2007 - Keeper... - The Legacy World Tour - Live In Sao Paulo/06. A Tale That Wasn't.mp3
+
+      Giant 1990 - Time To Burn/05. Lost In Paradise.mp3
+
+      MSG 1989 - Save Yourself/09. Anytime [single edit, bonus] [1989 - Save Yourself].mp3
+
+      Skid Row 1991 - Slave To The Grind/04. Quicksand Jesus [1991 - Slave To The Grind].mp3
+
+      Steelheart 1990 - Steelheart/09. She's Gone (Lady) [1990 - Steelheart].mp3
+
+      Wasp 1992 -The Crimson Idol/08. The Idol (1992 -The Crimson Idol).mp3
+
+      Wasp 1992 -The Crimson Idol/09. Hold On To My Heart (1992 -The Crimson Idol).mp3
+
+      Stone Sour 2006 - Come What (Ever) May/14. Stone Sour - Wicked Game (Acoustic).mp3
+
+      ile22=YJM 1994 - The Seventh Sign/04. Forever One.mp3
+
+      Whitesnake 2014 -Best Ballads/05. Til The End Of Time.mp3
+
+      Whitesnake 2014 -Best Ballads/09. Sailing Ships.mp3
+
+      ария 2011 - Золотые Баллады/01. Всё, Что Было.mp3
+
+      Кипелов and Маврин 1997 - Смутное Время/04. Я Свободен.mp3
+
+      nobody.one 2010 - head movies/08 - The Duck Song.mp3
+
 
       **ТЗ** 
       https://github.com/rolling-scopes-school/tasks/blob/master/tasks/js30%23/js30-2.md
@@ -97,15 +157,13 @@ console.log(`
 https://rolling-scopes-school.github.io/checklist/
 
 
-**Ваша оценка - 50 баллов** 
+**Ваша оценка - 60 баллов** 
 
 #### Отзыв по пунктам ТЗ:
 
 #####**Не выполненные/не засчитанные пункты:**
 ======================================================
-1) При смене аудиотрека меняется изображение - обложка аудиотрека
-
-2) Очень высокое качество оформления приложения и/или дополнительный не предусмотренный в задании функционал, улучшающий качество приложения
+1) Очень высокое качество оформления приложения и/или дополнительный не предусмотренный в задании функционал, улучшающий качество приложения
 TODO! добавить ползунок громкости, добавить отображение песен в плейлисте (по клику на иконку), добавить возможность изменять плейлист (менять местами, удалять песни).
 #####**Выполненные пункты:**
 =====================================================
@@ -120,10 +178,12 @@ TODO! добавить ползунок громкости, добавить о�
 
 5) При кликах по кнопкам "Вперёд" и "Назад" переключается проигрываемый аудиотрек. Аудиотреки пролистываются по кругу - после последнего идёт первый
 
-6) Прогресс-бар отображает прогресс проигрывания текущего аудиотрека. При перемещении ползунка вручную меняется текущее время проигрывания аудиотрека
+6) При смене аудиотрека меняется изображение - обложка аудиотрека
+
+7) Прогресс-бар отображает прогресс проигрывания текущего аудиотрека. При перемещении ползунка вручную меняется текущее время проигрывания аудиотрека
 P.S. есть артефакт, когда вручную часто тыкаешь в прогресс-бар - в результате перемотка работает не совсем корректно. Как пофиксить - пока не знаю((
 
-7) Отображается продолжительность аудиотрека и его текущее время проигрывания
+8) Отображается продолжительность аудиотрека и его текущее время проигрывания
 `)
 
 /***/ }),
@@ -200,6 +260,8 @@ function audioPlayerHandler() {
   // classnames and ids
   const audioPlayerClassName = 'audio-player';
 
+  const bodyBackgroundImageClassName = 'body_background-image';
+
   const audioPlayerButtonsContainerClassName = 'audio-player-buttons';
 
   const audioSourseClassName = 'audioSourse';
@@ -225,6 +287,8 @@ function audioPlayerHandler() {
   const buttonNextClassName = 'button-next';
   // HTML elements
   const audioPlayer = document.querySelector(`.${audioPlayerClassName}`);
+
+  const bodyBackgroundImage = document.querySelector(`.${bodyBackgroundImageClassName}`);
 
   const audioPlayerButtonsContainer = document.querySelector(`.${audioPlayerButtonsContainerClassName}`);
 
@@ -261,15 +325,16 @@ function audioPlayerHandler() {
 
   class SongData {
     constructor(songAuthorBand, songName, songAlbumName, songAlbumYear, songAlbumCover) {
-      this._songName = songName;
       this._songAuthorBand = songAuthorBand;
+      this._songName = songName;
       this._songAlbumName = songAlbumName;
       this._songAlbumYear = songAlbumYear;
       this._songAlbumCover = songAlbumCover;
     }
 
     getSongName() {
-      return this._songName;
+      // without file extension on the end
+      return this._songName.replace(/\.\w+\d+$/gi, '');
     }
 
     getSongAuthorBand() {
@@ -290,38 +355,38 @@ function audioPlayerHandler() {
   }
 
   const arrayOfSongDataObj = [
-    new SongData('Giant', '01. Thunder And Lightning.mp3', 'Time To Burn', '1990', 'Cover.jpg'),
-    new SongData('Giant', '04. Stay.mp3', 'Time To Burn', '1990', 'Cover.jpg'),
-    new SongData('Axel Rudi Pell', '02. Nasty Reputation.mp3', 'Nasty Reputation', '1991', 'Cover.jpg'),
-    new SongData('Motley Crue', '02 - Girls, Girls, Girls.mp3', 'Girls, Girls, Girls', '1987', 'Cover.jpg'),
-    new SongData('Asking Alexandria', '10 - Moving On.mp3', 'From Death To Destiny', '2013', 'Cover.png'),
-    new SongData('Cinderella', `03. Nobody's Fool [1986 - Night Songs].mp3`, 'Night Songs', '1986', 'Cover.jpg'),
-    new SongData('Cinderella', `07. Somebody Save Me [1986 - Night Songs].mp3`, 'Night Songs', '1986', 'Cover.jpg'),
-    new SongData('Dokken', `05. Lightnin' Strikes Again.mp3`, 'Under Lock And Key', '1985', 'Cover.jpg'),
-    new SongData('Dokken', `14. Walk Away.mp3`, 'Beast From The East', '1988', 'Cover.jpg'),
-    new SongData('Giant', `04. I'll See You In My Dreams.mp3`, 'Last Of The Runaways', '1989', 'Cover.jpg'),
-    new SongData(`Guns'N'Roses`, `This I love (2008 Chinese Democracy).mp3`, 'Chinese Democracy', '2008', 'Cover.jpg'),
-    new SongData(`Cinderella`, `03. Don't Know What You Got (Till It's Gone) [1988 - Long Cold Winter].mp3`, 'Long Cold Winter', '1988', 'Cover.jpg'),
-    new SongData(`Helloween`, `05. Forever And One (Neverland).mp3`, 'The Time Of The Oath', '1996', 'Cover.png'),
-    new SongData(`Hellowen`, `06. A Tale That Wasn't.mp3`, 'The Legacy World Tour - Live In Sao Paulo', '2007', 'Cover.png'),
-    new SongData(`Giant`, `05. Lost In Paradise.mp3`, 'Time To Burn', '1990', 'Cover.jpg'),
-    new SongData(`MSG`, `09. Anytime [single edit, bonus] [1989 - Save Yourself].mp3`, 'Save Yourself', '1989', 'Cover.jpg'),
-    new SongData(`Skid Row`, `04. Quicksand Jesus [1991 - Slave To The Grind].mp3`, 'Slave To The Grind', '1991', 'Cover.jpg'),
-    new SongData(`Steelheart`, `09. She's Gone (Lady) [1990 - Steelheart].mp3`, 'Steelheart', '1990', 'Cover.jpg'),
-    new SongData(`Wasp`, `08. The Idol (1992 -The Crimson Idol).mp3`, 'The Crimson Idol', '1992', 'Cover.jpg'),
-    new SongData(`Wasp`, `09. Hold On To My Heart (1992 -The Crimson Idol).mp3`, 'The Crimson Idol', '1992', 'Cover.jpg'),
-    new SongData(`Stone Sour`, `14. Stone Sour - Wicked Game (Acoustic).mp3`, 'Come What (Ever) May', '2006', 'Cover.jpg'),
-    new SongData(`Yngwie J. Malmsteen`, `04. Forever One.mp3`, 'The Seventh Sign', '1994', 'Cover.jpg'),
-    new SongData(`Whitesnake`, `05. Til The End Of Time.mp3`, 'Best Ballads', '2014', 'Cover.jpg'),
-    new SongData(`Whitesnake`, `09. Sailing Ships.mp3`, 'Best Ballads', '2014', 'Cover.jpg'),
-    new SongData(`ария`, `01. Всё, Что Было.mp3`, 'Золотые Баллады', '2011', 'Cover.jpg'),
-    new SongData(`Кипелов & Маврин`, `04. Я Свободен.mp3`, 'Смутное Время', '1997', 'Cover.jpg'),
-    new SongData(`nobody.one`, `08 - The Duck Song.mp3`, 'head movies', '2010', 'Cover.jpg'),
+    new SongData('Giant', '01. Thunder And Lightning.mp3', 'Time To Burn', '1990', '1990 - Time To Burn.jpg'),
+    new SongData('Giant', '04. Stay.mp3', 'Time To Burn', '1990', '1990 - Time To Burn.jpg'),
+    new SongData('Axel Rudi Pell', '02. Nasty Reputation.mp3', 'Nasty Reputation', '1991', '1991 - Nasty Reputation Cover.jpg'),
+    new SongData('Motley Crue', '02 - Girls, Girls, Girls.mp3', 'Girls, Girls, Girls', '1987', '1987 - Girls, Girls, Girls Cover.jpg'),
+    new SongData('Asking Alexandria', '10 - Moving On.mp3', 'From Death To Destiny', '2013', '2013 - From Death To Destiny Cover.png'),
+    new SongData('Cinderella', `03. Nobody's Fool [1986 - Night Songs].mp3`, 'Night Songs', '1986', '1986 - Night Songs Cover.jpg'),
+    new SongData('Cinderella', `07. Somebody Save Me [1986 - Night Songs].mp3`, 'Night Songs', '1986', '1986 - Night Songs Cover.jpg'),
+    new SongData('Dokken', `05. Lightnin' Strikes Again.mp3`, 'Under Lock And Key', '1985', '1985 - Under Lock And Key Cover.jpg'),
+    new SongData('Dokken', `14. Walk Away.mp3`, 'Beast From The East', '1988', '1988 - Beast From The East Cover.jpg'),
+    new SongData('Giant', `04. I'll See You In My Dreams.mp3`, 'Last Of The Runaways', '1989', '1989 - Last Of The Runaways Cover.jpg'),
+    new SongData(`Guns'N'Roses`, `This I love (2008 Chinese Democracy).mp3`, 'Chinese Democracy', '2008', '2008 - Chinese Democracy Cover.jpg'),
+    new SongData(`Cinderella`, `03. Don't Know What You Got (Till It's Gone) [1988 - Long Cold Winter].mp3`, 'Long Cold Winter', '1988', '1988 - Long Cold Winter Cover.jpg'),
+    new SongData(`Helloween`, `05. Forever And One (Neverland).mp3`, 'The Time Of The Oath', '1996', '1996 - The Time Of The Oath Cover.png'),
+    new SongData(`Hellowen`, `06. A Tale That Wasn't.mp3`, 'The Legacy World Tour - Live In Sao Paulo', '2007', '2007 - The Legacy World Tour - Live In Sao Paulo Cover.png'),
+    new SongData(`Giant`, `05. Lost In Paradise.mp3`, 'Time To Burn', '1990', '1990 - Time To Burn.jpg'),
+    new SongData(`MSG`, `09. Anytime [single edit, bonus] [1989 - Save Yourself].mp3`, 'Save Yourself', '1989', '1989 - Save Yourself Cover.jpg'),
+    new SongData(`Skid Row`, `04. Quicksand Jesus [1991 - Slave To The Grind].mp3`, 'Slave To The Grind', '1991', '1991 - Slave To The Grind Cover.jpg'),
+    new SongData(`Steelheart`, `09. She's Gone (Lady) [1990 - Steelheart].mp3`, 'Steelheart', '1990', '1990 - Steelheart Cover.jpg'),
+    new SongData(`Wasp`, `08. The Idol (1992 -The Crimson Idol).mp3`, 'The Crimson Idol', '1992', '1992 -The Crimson Idol Cover.jpg'),
+    new SongData(`Wasp`, `09. Hold On To My Heart (1992 -The Crimson Idol).mp3`, 'The Crimson Idol', '1992', '1992 -The Crimson Idol Cover.jpg'),
+    new SongData(`Stone Sour`, `14. Stone Sour - Wicked Game (Acoustic).mp3`, 'Come What (Ever) May', '2006', '2006 - Come What (Ever) May Cover.jpg'),
+    new SongData(`Yngwie J. Malmsteen`, `04. Forever One.mp3`, 'The Seventh Sign', '1994', '1994 - The Seventh Sign Cover.jpg'),
+    new SongData(`Whitesnake`, `05. Til The End Of Time.mp3`, 'Best Ballads', '2014', '2014 -Best Ballads Cover.jpg'),
+    new SongData(`Whitesnake`, `09. Sailing Ships.mp3`, 'Best Ballads', '2014', '2014 -Best Ballads Cover.jpg'),
+    new SongData(`Ария`, `01. Всё, Что Было.mp3`, 'Золотые Баллады', '2011', '2011 - Золотые Баллады Cover.jpg'),
+    new SongData(`Кипелов & Маврин`, `04. Я Свободен.mp3`, 'Смутное Время', '1997', '1997 - Смутное Время Cover.jpg'),
+    new SongData(`nobody.one`, `08 - The Duck Song.mp3`, 'head movies', '2010', '2010 - head movies Cover.jpg'),
   ]
 
   let currentSongDataIndex = 0;
 
-  function getSongOrCoverBaseUri(commonDomainPathRegExp) {
+  function getSongOrCoverCommonPath(commonDomainPathRegExp) {
     // .baseUri not a friend of yours! It leads to wrong path
     // e.g. https://rolling-scopes-school.github.io/dmitriy-frostoff-JSFEPRESCHOOL2023Q2/audio-player/index.html
     // I need https://rolling-scopes-school.github.io/dmitriy-frostoff-JSFEPRESCHOOL2023Q2/audio-player/
@@ -342,11 +407,32 @@ function audioPlayerHandler() {
   }
 
   function getFullPathForSong() {
-    const fullPath = `${getSongOrCoverBaseUri(commonDomainPathRegExp)}${getHashedAudioElemPath(dictionarySongsUncachedCachedFilenames, arrayOfSongDataObj[currentSongDataIndex], `getSongName`)}`;
+    const fullPath = `${getSongOrCoverCommonPath(commonDomainPathRegExp)}${getHashedAudioElemPath(dictionarySongsUncachedCachedFilenames, arrayOfSongDataObj[currentSongDataIndex], `getSongName`)}`;
 
     const fullPathResolveWhiteSpaces = fullPath.replace(/\s+/gi, '%20');
     
     return fullPathResolveWhiteSpaces;
+  }
+
+  function getFullPathForSongCover() {
+    const fullPath = `${getSongOrCoverCommonPath(commonDomainPathRegExp)}${getHashedAudioElemPath(dictionaryCoversUncachedCachedFilenames, arrayOfSongDataObj[currentSongDataIndex], `getSongAlbumCover`)}`;
+
+    const fullPathResolveWhiteSpaces = fullPath.replace(/\s+/gi, '%20');
+    
+    return fullPathResolveWhiteSpaces;
+  }
+
+  function setCurrentSongInfo() {
+    // background-image for body
+    bodyBackgroundImage.style.backgroundImage = `url(${getFullPathForSongCover()})`;
+    // background-image for audio - player current album image
+    songAlbumCover.style.backgroundImage = `url(${getFullPathForSongCover()})`;
+    
+    // current song info => songName, singer/band, album name, album releaze year
+    songName.innerText = arrayOfSongDataObj[currentSongDataIndex].getSongName();
+    songAuthorBand.innerText = arrayOfSongDataObj[currentSongDataIndex].getSongAuthorBand();
+    songAlbumName.innerText = arrayOfSongDataObj[currentSongDataIndex].getSongAlbumName();
+    songAlbumYear.innerText = arrayOfSongDataObj[currentSongDataIndex].getSongAlbumYear();
   }
 
   function playbackAudio() {
@@ -454,6 +540,7 @@ function audioPlayerHandler() {
 
   // every currentTime song's update
   audioSourse.addEventListener('timeupdate', (event) => {
+    setCurrentSongInfo();
     handleSongTime();
     songPlaybackProgress();
   })
@@ -991,245 +1078,245 @@ module.exports = __webpack_require__.p + "src/assets/audio/ария 2011 - Зо�
 
 /***/ }),
 
-/***/ "./audio-player/src/assets/audio/Asking Alexandria 2013 - From Death To Destiny/Cover.png":
-/*!************************************************************************************************!*\
-  !*** ./audio-player/src/assets/audio/Asking Alexandria 2013 - From Death To Destiny/Cover.png ***!
-  \************************************************************************************************/
+/***/ "./audio-player/src/assets/audio/Asking Alexandria 2013 - From Death To Destiny/2013 - From Death To Destiny Cover.png":
+/*!*****************************************************************************************************************************!*\
+  !*** ./audio-player/src/assets/audio/Asking Alexandria 2013 - From Death To Destiny/2013 - From Death To Destiny Cover.png ***!
+  \*****************************************************************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "src/assets/audio/Asking Alexandria 2013 - From Death To Destiny/Cover.f1db.png";
+module.exports = __webpack_require__.p + "src/assets/audio/Asking Alexandria 2013 - From Death To Destiny/2013 - From Death To Destiny Cover.f1db.png";
 
 /***/ }),
 
-/***/ "./audio-player/src/assets/audio/Axel Rudi Pell 1991 - Nasty Reputation/Cover.jpg":
-/*!****************************************************************************************!*\
-  !*** ./audio-player/src/assets/audio/Axel Rudi Pell 1991 - Nasty Reputation/Cover.jpg ***!
-  \****************************************************************************************/
+/***/ "./audio-player/src/assets/audio/Axel Rudi Pell 1991 - Nasty Reputation/1991 - Nasty Reputation Cover.jpg":
+/*!****************************************************************************************************************!*\
+  !*** ./audio-player/src/assets/audio/Axel Rudi Pell 1991 - Nasty Reputation/1991 - Nasty Reputation Cover.jpg ***!
+  \****************************************************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "src/assets/audio/Axel Rudi Pell 1991 - Nasty Reputation/Cover.1c96.jpg";
+module.exports = __webpack_require__.p + "src/assets/audio/Axel Rudi Pell 1991 - Nasty Reputation/1991 - Nasty Reputation Cover.1c96.jpg";
 
 /***/ }),
 
-/***/ "./audio-player/src/assets/audio/Cinderella 1986 - Night Songs/Cover.jpg":
-/*!*******************************************************************************!*\
-  !*** ./audio-player/src/assets/audio/Cinderella 1986 - Night Songs/Cover.jpg ***!
-  \*******************************************************************************/
+/***/ "./audio-player/src/assets/audio/Cinderella 1986 - Night Songs/1986 - Night Songs Cover.jpg":
+/*!**************************************************************************************************!*\
+  !*** ./audio-player/src/assets/audio/Cinderella 1986 - Night Songs/1986 - Night Songs Cover.jpg ***!
+  \**************************************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "src/assets/audio/Cinderella 1986 - Night Songs/Cover.a1c3.jpg";
+module.exports = __webpack_require__.p + "src/assets/audio/Cinderella 1986 - Night Songs/1986 - Night Songs Cover.a1c3.jpg";
 
 /***/ }),
 
-/***/ "./audio-player/src/assets/audio/Cinderella 1988 - Long Cold Winter/Cover.jpg":
-/*!************************************************************************************!*\
-  !*** ./audio-player/src/assets/audio/Cinderella 1988 - Long Cold Winter/Cover.jpg ***!
-  \************************************************************************************/
+/***/ "./audio-player/src/assets/audio/Cinderella 1988 - Long Cold Winter/1988 - Long Cold Winter Cover.jpg":
+/*!************************************************************************************************************!*\
+  !*** ./audio-player/src/assets/audio/Cinderella 1988 - Long Cold Winter/1988 - Long Cold Winter Cover.jpg ***!
+  \************************************************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "src/assets/audio/Cinderella 1988 - Long Cold Winter/Cover.bce9.jpg";
+module.exports = __webpack_require__.p + "src/assets/audio/Cinderella 1988 - Long Cold Winter/1988 - Long Cold Winter Cover.bce9.jpg";
 
 /***/ }),
 
-/***/ "./audio-player/src/assets/audio/Dokken 1985 - Under Lock And Key/Cover.jpg":
-/*!**********************************************************************************!*\
-  !*** ./audio-player/src/assets/audio/Dokken 1985 - Under Lock And Key/Cover.jpg ***!
-  \**********************************************************************************/
+/***/ "./audio-player/src/assets/audio/Dokken 1985 - Under Lock And Key/1985 - Under Lock And Key Cover.jpg":
+/*!************************************************************************************************************!*\
+  !*** ./audio-player/src/assets/audio/Dokken 1985 - Under Lock And Key/1985 - Under Lock And Key Cover.jpg ***!
+  \************************************************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "src/assets/audio/Dokken 1985 - Under Lock And Key/Cover.30a8.jpg";
+module.exports = __webpack_require__.p + "src/assets/audio/Dokken 1985 - Under Lock And Key/1985 - Under Lock And Key Cover.30a8.jpg";
 
 /***/ }),
 
-/***/ "./audio-player/src/assets/audio/Dokken 1988 - Beast From The East/Cover.jpg":
-/*!***********************************************************************************!*\
-  !*** ./audio-player/src/assets/audio/Dokken 1988 - Beast From The East/Cover.jpg ***!
-  \***********************************************************************************/
+/***/ "./audio-player/src/assets/audio/Dokken 1988 - Beast From The East/1988 - Beast From The East Cover.jpg":
+/*!**************************************************************************************************************!*\
+  !*** ./audio-player/src/assets/audio/Dokken 1988 - Beast From The East/1988 - Beast From The East Cover.jpg ***!
+  \**************************************************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "src/assets/audio/Dokken 1988 - Beast From The East/Cover.6b7c.jpg";
+module.exports = __webpack_require__.p + "src/assets/audio/Dokken 1988 - Beast From The East/1988 - Beast From The East Cover.6b7c.jpg";
 
 /***/ }),
 
-/***/ "./audio-player/src/assets/audio/Giant 1989 - Last Of The Runaways/Cover.jpg":
-/*!***********************************************************************************!*\
-  !*** ./audio-player/src/assets/audio/Giant 1989 - Last Of The Runaways/Cover.jpg ***!
-  \***********************************************************************************/
+/***/ "./audio-player/src/assets/audio/Giant 1989 - Last Of The Runaways/1989 - Last Of The Runaways Cover.jpg":
+/*!***************************************************************************************************************!*\
+  !*** ./audio-player/src/assets/audio/Giant 1989 - Last Of The Runaways/1989 - Last Of The Runaways Cover.jpg ***!
+  \***************************************************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "src/assets/audio/Giant 1989 - Last Of The Runaways/Cover.20df.jpg";
+module.exports = __webpack_require__.p + "src/assets/audio/Giant 1989 - Last Of The Runaways/1989 - Last Of The Runaways Cover.20df.jpg";
 
 /***/ }),
 
-/***/ "./audio-player/src/assets/audio/Giant 1990 - Time To Burn/Cover.jpg":
-/*!***************************************************************************!*\
-  !*** ./audio-player/src/assets/audio/Giant 1990 - Time To Burn/Cover.jpg ***!
-  \***************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-module.exports = __webpack_require__.p + "src/assets/audio/Giant 1990 - Time To Burn/Cover.f8da.jpg";
-
-/***/ }),
-
-/***/ "./audio-player/src/assets/audio/GnR 2008 - Chinese Democracy/Cover.jpg":
-/*!******************************************************************************!*\
-  !*** ./audio-player/src/assets/audio/GnR 2008 - Chinese Democracy/Cover.jpg ***!
-  \******************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-module.exports = __webpack_require__.p + "src/assets/audio/GnR 2008 - Chinese Democracy/Cover.88c2.jpg";
-
-/***/ }),
-
-/***/ "./audio-player/src/assets/audio/Helloween 1996 - The Time Of The Oath/Cover.png":
-/*!***************************************************************************************!*\
-  !*** ./audio-player/src/assets/audio/Helloween 1996 - The Time Of The Oath/Cover.png ***!
-  \***************************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-module.exports = __webpack_require__.p + "src/assets/audio/Helloween 1996 - The Time Of The Oath/Cover.8bf0.png";
-
-/***/ }),
-
-/***/ "./audio-player/src/assets/audio/Hellowen 2007 - Keeper... - The Legacy World Tour - Live In Sao Paulo/Cover.png":
-/*!***********************************************************************************************************************!*\
-  !*** ./audio-player/src/assets/audio/Hellowen 2007 - Keeper... - The Legacy World Tour - Live In Sao Paulo/Cover.png ***!
-  \***********************************************************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-module.exports = __webpack_require__.p + "src/assets/audio/Hellowen 2007 - Keeper... - The Legacy World Tour - Live In Sao Paulo/Cover.f04d.png";
-
-/***/ }),
-
-/***/ "./audio-player/src/assets/audio/MSG 1989 - Save Yourself/Cover.jpg":
-/*!**************************************************************************!*\
-  !*** ./audio-player/src/assets/audio/MSG 1989 - Save Yourself/Cover.jpg ***!
-  \**************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-module.exports = __webpack_require__.p + "src/assets/audio/MSG 1989 - Save Yourself/Cover.1194.jpg";
-
-/***/ }),
-
-/***/ "./audio-player/src/assets/audio/Motley Crue 1987 - Girls, Girls, Girls/Cover.jpg":
-/*!****************************************************************************************!*\
-  !*** ./audio-player/src/assets/audio/Motley Crue 1987 - Girls, Girls, Girls/Cover.jpg ***!
-  \****************************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-module.exports = __webpack_require__.p + "src/assets/audio/Motley Crue 1987 - Girls, Girls, Girls/Cover.ada5.jpg";
-
-/***/ }),
-
-/***/ "./audio-player/src/assets/audio/Skid Row 1991 - Slave To The Grind/Cover.jpg":
-/*!************************************************************************************!*\
-  !*** ./audio-player/src/assets/audio/Skid Row 1991 - Slave To The Grind/Cover.jpg ***!
-  \************************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-module.exports = __webpack_require__.p + "src/assets/audio/Skid Row 1991 - Slave To The Grind/Cover.8110.jpg";
-
-/***/ }),
-
-/***/ "./audio-player/src/assets/audio/Steelheart 1990 - Steelheart/Cover.jpg":
-/*!******************************************************************************!*\
-  !*** ./audio-player/src/assets/audio/Steelheart 1990 - Steelheart/Cover.jpg ***!
-  \******************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-module.exports = __webpack_require__.p + "src/assets/audio/Steelheart 1990 - Steelheart/Cover.6784.jpg";
-
-/***/ }),
-
-/***/ "./audio-player/src/assets/audio/Stone Sour 2006 - Come What (Ever) May/Cover.jpg":
-/*!****************************************************************************************!*\
-  !*** ./audio-player/src/assets/audio/Stone Sour 2006 - Come What (Ever) May/Cover.jpg ***!
-  \****************************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-module.exports = __webpack_require__.p + "src/assets/audio/Stone Sour 2006 - Come What (Ever) May/Cover.2d31.jpg";
-
-/***/ }),
-
-/***/ "./audio-player/src/assets/audio/Wasp 1992 -The Crimson Idol/Cover.jpg":
-/*!*****************************************************************************!*\
-  !*** ./audio-player/src/assets/audio/Wasp 1992 -The Crimson Idol/Cover.jpg ***!
-  \*****************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-module.exports = __webpack_require__.p + "src/assets/audio/Wasp 1992 -The Crimson Idol/Cover.c6f6.jpg";
-
-/***/ }),
-
-/***/ "./audio-player/src/assets/audio/Whitesnake 2014 -Best Ballads/Cover.jpg":
-/*!*******************************************************************************!*\
-  !*** ./audio-player/src/assets/audio/Whitesnake 2014 -Best Ballads/Cover.jpg ***!
-  \*******************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-module.exports = __webpack_require__.p + "src/assets/audio/Whitesnake 2014 -Best Ballads/Cover.d51c.jpg";
-
-/***/ }),
-
-/***/ "./audio-player/src/assets/audio/YJM 1994 - The Seventh Sign/Cover.jpg":
-/*!*****************************************************************************!*\
-  !*** ./audio-player/src/assets/audio/YJM 1994 - The Seventh Sign/Cover.jpg ***!
-  \*****************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-module.exports = __webpack_require__.p + "src/assets/audio/YJM 1994 - The Seventh Sign/Cover.8efc.jpg";
-
-/***/ }),
-
-/***/ "./audio-player/src/assets/audio/nobody.one 2010 - head movies/Cover.jpg":
-/*!*******************************************************************************!*\
-  !*** ./audio-player/src/assets/audio/nobody.one 2010 - head movies/Cover.jpg ***!
-  \*******************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-module.exports = __webpack_require__.p + "src/assets/audio/nobody.one 2010 - head movies/Cover.175a.jpg";
-
-/***/ }),
-
-/***/ "./audio-player/src/assets/audio/Кипелов and Маврин 1997 - Смутное Время/Cover.jpg":
+/***/ "./audio-player/src/assets/audio/Giant 1990 - Time To Burn/1990 - Time To Burn.jpg":
 /*!*****************************************************************************************!*\
-  !*** ./audio-player/src/assets/audio/Кипелов and Маврин 1997 - Смутное Время/Cover.jpg ***!
+  !*** ./audio-player/src/assets/audio/Giant 1990 - Time To Burn/1990 - Time To Burn.jpg ***!
   \*****************************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "src/assets/audio/Кипелов and Маврин 1997 - Смутное Время/Cover.601c.jpg";
+module.exports = __webpack_require__.p + "src/assets/audio/Giant 1990 - Time To Burn/1990 - Time To Burn.f8da.jpg";
 
 /***/ }),
 
-/***/ "./audio-player/src/assets/audio/ария 2011 - Золотые Баллады/Cover.jpg":
-/*!*****************************************************************************!*\
-  !*** ./audio-player/src/assets/audio/ария 2011 - Золотые Баллады/Cover.jpg ***!
-  \*****************************************************************************/
+/***/ "./audio-player/src/assets/audio/GnR 2008 - Chinese Democracy/2008 - Chinese Democracy Cover.jpg":
+/*!*******************************************************************************************************!*\
+  !*** ./audio-player/src/assets/audio/GnR 2008 - Chinese Democracy/2008 - Chinese Democracy Cover.jpg ***!
+  \*******************************************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "src/assets/audio/ария 2011 - Золотые Баллады/Cover.2df7.jpg";
+module.exports = __webpack_require__.p + "src/assets/audio/GnR 2008 - Chinese Democracy/2008 - Chinese Democracy Cover.88c2.jpg";
+
+/***/ }),
+
+/***/ "./audio-player/src/assets/audio/Helloween 1996 - The Time Of The Oath/1996 - The Time Of The Oath Cover.png":
+/*!*******************************************************************************************************************!*\
+  !*** ./audio-player/src/assets/audio/Helloween 1996 - The Time Of The Oath/1996 - The Time Of The Oath Cover.png ***!
+  \*******************************************************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "src/assets/audio/Helloween 1996 - The Time Of The Oath/1996 - The Time Of The Oath Cover.8bf0.png";
+
+/***/ }),
+
+/***/ "./audio-player/src/assets/audio/Hellowen 2007 - Keeper... - The Legacy World Tour - Live In Sao Paulo/2007 - The Legacy World Tour - Live In Sao Paulo Cover.png":
+/*!************************************************************************************************************************************************************************!*\
+  !*** ./audio-player/src/assets/audio/Hellowen 2007 - Keeper... - The Legacy World Tour - Live In Sao Paulo/2007 - The Legacy World Tour - Live In Sao Paulo Cover.png ***!
+  \************************************************************************************************************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "src/assets/audio/Hellowen 2007 - Keeper... - The Legacy World Tour - Live In Sao Paulo/2007 - The Legacy World Tour - Live In Sao Paulo Cover.f04d.png";
+
+/***/ }),
+
+/***/ "./audio-player/src/assets/audio/MSG 1989 - Save Yourself/1989 - Save Yourself Cover.jpg":
+/*!***********************************************************************************************!*\
+  !*** ./audio-player/src/assets/audio/MSG 1989 - Save Yourself/1989 - Save Yourself Cover.jpg ***!
+  \***********************************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "src/assets/audio/MSG 1989 - Save Yourself/1989 - Save Yourself Cover.1194.jpg";
+
+/***/ }),
+
+/***/ "./audio-player/src/assets/audio/Motley Crue 1987 - Girls, Girls, Girls/1987 - Girls, Girls, Girls Cover.jpg":
+/*!*******************************************************************************************************************!*\
+  !*** ./audio-player/src/assets/audio/Motley Crue 1987 - Girls, Girls, Girls/1987 - Girls, Girls, Girls Cover.jpg ***!
+  \*******************************************************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "src/assets/audio/Motley Crue 1987 - Girls, Girls, Girls/1987 - Girls, Girls, Girls Cover.ada5.jpg";
+
+/***/ }),
+
+/***/ "./audio-player/src/assets/audio/Skid Row 1991 - Slave To The Grind/1991 - Slave To The Grind Cover.jpg":
+/*!**************************************************************************************************************!*\
+  !*** ./audio-player/src/assets/audio/Skid Row 1991 - Slave To The Grind/1991 - Slave To The Grind Cover.jpg ***!
+  \**************************************************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "src/assets/audio/Skid Row 1991 - Slave To The Grind/1991 - Slave To The Grind Cover.8110.jpg";
+
+/***/ }),
+
+/***/ "./audio-player/src/assets/audio/Steelheart 1990 - Steelheart/1990 - Steelheart Cover.jpg":
+/*!************************************************************************************************!*\
+  !*** ./audio-player/src/assets/audio/Steelheart 1990 - Steelheart/1990 - Steelheart Cover.jpg ***!
+  \************************************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "src/assets/audio/Steelheart 1990 - Steelheart/1990 - Steelheart Cover.6784.jpg";
+
+/***/ }),
+
+/***/ "./audio-player/src/assets/audio/Stone Sour 2006 - Come What (Ever) May/2006 - Come What (Ever) May Cover.jpg":
+/*!********************************************************************************************************************!*\
+  !*** ./audio-player/src/assets/audio/Stone Sour 2006 - Come What (Ever) May/2006 - Come What (Ever) May Cover.jpg ***!
+  \********************************************************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "src/assets/audio/Stone Sour 2006 - Come What (Ever) May/2006 - Come What (Ever) May Cover.2d31.jpg";
+
+/***/ }),
+
+/***/ "./audio-player/src/assets/audio/Wasp 1992 -The Crimson Idol/1992 -The Crimson Idol Cover.jpg":
+/*!****************************************************************************************************!*\
+  !*** ./audio-player/src/assets/audio/Wasp 1992 -The Crimson Idol/1992 -The Crimson Idol Cover.jpg ***!
+  \****************************************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "src/assets/audio/Wasp 1992 -The Crimson Idol/1992 -The Crimson Idol Cover.c6f6.jpg";
+
+/***/ }),
+
+/***/ "./audio-player/src/assets/audio/Whitesnake 2014 -Best Ballads/2014 -Best Ballads Cover.jpg":
+/*!**************************************************************************************************!*\
+  !*** ./audio-player/src/assets/audio/Whitesnake 2014 -Best Ballads/2014 -Best Ballads Cover.jpg ***!
+  \**************************************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "src/assets/audio/Whitesnake 2014 -Best Ballads/2014 -Best Ballads Cover.d51c.jpg";
+
+/***/ }),
+
+/***/ "./audio-player/src/assets/audio/YJM 1994 - The Seventh Sign/1994 - The Seventh Sign Cover.jpg":
+/*!*****************************************************************************************************!*\
+  !*** ./audio-player/src/assets/audio/YJM 1994 - The Seventh Sign/1994 - The Seventh Sign Cover.jpg ***!
+  \*****************************************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "src/assets/audio/YJM 1994 - The Seventh Sign/1994 - The Seventh Sign Cover.8efc.jpg";
+
+/***/ }),
+
+/***/ "./audio-player/src/assets/audio/nobody.one 2010 - head movies/2010 - head movies Cover.jpg":
+/*!**************************************************************************************************!*\
+  !*** ./audio-player/src/assets/audio/nobody.one 2010 - head movies/2010 - head movies Cover.jpg ***!
+  \**************************************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "src/assets/audio/nobody.one 2010 - head movies/2010 - head movies Cover.175a.jpg";
+
+/***/ }),
+
+/***/ "./audio-player/src/assets/audio/Кипелов and Маврин 1997 - Смутное Время/1997 - Смутное Время Cover.jpg":
+/*!**************************************************************************************************************!*\
+  !*** ./audio-player/src/assets/audio/Кипелов and Маврин 1997 - Смутное Время/1997 - Смутное Время Cover.jpg ***!
+  \**************************************************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "src/assets/audio/Кипелов and Маврин 1997 - Смутное Время/1997 - Смутное Время Cover.601c.jpg";
+
+/***/ }),
+
+/***/ "./audio-player/src/assets/audio/ария 2011 - Золотые Баллады/2011 - Золотые Баллады Cover.jpg":
+/*!****************************************************************************************************!*\
+  !*** ./audio-player/src/assets/audio/ария 2011 - Золотые Баллады/2011 - Золотые Баллады Cover.jpg ***!
+  \****************************************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "src/assets/audio/ария 2011 - Золотые Баллады/2011 - Золотые Баллады Cover.2df7.jpg";
 
 /***/ })
 
@@ -1384,4 +1471,4 @@ window.addEventListener('load', () => {
 
 /******/ })()
 ;
-//# sourceMappingURL=main.91d0.js.map
+//# sourceMappingURL=main.6c11.js.map
