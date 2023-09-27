@@ -725,8 +725,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/html-loader/dist/runtime/getUrl.js */ "./node_modules/html-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___HTML_LOADER_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../assets/icons/guitar.ico */ "./audio-player/src/assets/icons/guitar.ico"), __webpack_require__.b);
 // Module
-var code = "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n  <meta charset=\"UTF-8\">\r\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, user-scalable=yes\">\r\n  <meta name=\"keywords\" content=\"audio player, web audio player, custom audio player, web mp3 audio player\">\r\n  <title>Audio player</title>\r\n   <!-- favicon start -->\r\n   <!-- favicon end -->\r\n   <!-- css elements start -->\r\n  <!-- css elements end -->\r\n  <!-- Fonts links start -->\r\n  <!-- Fonts links end -->\r\n</head>\r\n<body class=\"body_background-image\">\r\n</body>\r\n</html>";
+var ___HTML_LOADER_REPLACEMENT_0___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_0___);
+var code = "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n  <meta charset=\"UTF-8\">\r\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, user-scalable=yes\">\r\n  <meta name=\"keywords\" content=\"audio player, web audio player, custom audio player, web mp3 audio player\">\r\n  <title>Audio player</title>\r\n   <!-- favicon start -->\r\n   <link rel=\"icon\" href=\"" + ___HTML_LOADER_REPLACEMENT_0___ + "\" type=\"image/x-icon\">\r\n   <!-- favicon end -->\r\n   <!-- css elements start -->\r\n  <!-- css elements end -->\r\n  <!-- Fonts links start -->\r\n  <!-- Fonts links end -->\r\n</head>\r\n<body class=\"body_background-image\">\r\n</body>\r\n</html>";
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);
 
@@ -1075,6 +1081,17 @@ module.exports = __webpack_require__.p + "src/assets/audio/Кипелов and М
 
 "use strict";
 module.exports = __webpack_require__.p + "src/assets/audio/ария 2011 - Золотые Баллады/01. Всё, Что Было.5d56.mp3";
+
+/***/ }),
+
+/***/ "./audio-player/src/assets/icons/guitar.ico":
+/*!**************************************************!*\
+  !*** ./audio-player/src/assets/icons/guitar.ico ***!
+  \**************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "src/assets/icons/guitar.8a42.ico";
 
 /***/ }),
 
@@ -1471,4 +1488,4 @@ window.addEventListener('load', () => {
 
 /******/ })()
 ;
-//# sourceMappingURL=main.6c11.js.map
+//# sourceMappingURL=main.23ee.js.map
