@@ -318,11 +318,11 @@ template {
   font-family: "Inter", sans-serif;
 }
 
-.footer__icon:hover, .footer__link:hover, .footer__link:hover .footer__icon, .footer__link:hover .github-text, .footer__link:active, .footer__link:active .footer__icon, .footer__link:active .github-text, .footer__link, .button-next-inner, .button-stop-inner, .button-pause-inner, .button-play-inner, .button-prev-inner, .button:active, .button:hover, .button, .link:hover, .link:active, .link {
+.footer__icon:hover, .footer__link:hover, .footer__link:hover .footer__icon, .footer__link:hover .github-text, .footer__link:active, .footer__link:active .footer__icon, .footer__link:active .github-text, .footer__link, .search__button::-webkit-search-cancel-button, .button:active, .button:hover, .button, .link:hover, .link:active, .link {
   transition: all 0.7s ease 0s;
 }
 
-.github-text, .footer__icon, .button-next-inner, .button-stop-inner, .button-pause-inner, .button-play-inner, .button-prev-inner {
+.github-text, .footer__icon {
   pointer-events: none;
 }
 
@@ -331,7 +331,7 @@ img, a, .code, p, pre, nav, ul, li, h1, h2, h3, h4, h5, .title {
   margin: 0;
 }
 
-.footer__icon:hover, .footer__link:hover, .footer__link:hover .footer__icon, .footer__link:hover .github-text, .footer__link:active, .footer__link:active .footer__icon, .footer__link:active .github-text, .button:hover, .button, a, .link {
+.footer__icon:hover, .footer__link:hover, .footer__link:hover .footer__icon, .footer__link:hover .github-text, .footer__link:active, .footer__link:active .footer__icon, .footer__link:active .github-text, .magnifying-glass, .search__button::-webkit-search-cancel-button, .button:hover, .button, a, .link {
   cursor: pointer;
 }
 
@@ -569,6 +569,10 @@ img {
   }
 }
 
+._background-color-dark {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
 .text_light {
   color: #F0F0F0;
 }
@@ -635,6 +639,10 @@ img {
   letter-spacing: 0.08px;
 }
 
+.text_fsize-h1 {
+  font-size: 30px;
+}
+
 .text_height-normal {
   line-height: normal;
 }
@@ -648,63 +656,62 @@ img {
 }
 
 .button {
-  width: 44px;
-  height: 44px;
+  width: 40vw;
+  height: 4vh;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   align-content: flex-start;
   justify-content: center;
   align-items: center;
-  padding: 10px 0px;
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.85);
-  background-color: rgba(150, 150, 150, 0.12);
+  text-indent: 5%;
+  border-radius: 1vw;
+  border: 1px solid rgb(255, 166, 0);
+  background-color: #E5E5E5;
 }
 .button:hover {
   border-color: #E5E5E5;
   background-color: #E5E5E5;
 }
-.button:hover > * > path {
-  fill: #000000;
-}
-.button:active {
-  animation: press 0.7s ease 0s 1;
-}
-
-.audio-player-buttons {
-  width: 80%;
-  flex-wrap: nowrap;
-  justify-content: center;
-  column-gap: 1vw;
-}
-
-.button-prev-inner > path {
-  fill: #E5E5E5;
-}
-
-.button-play-inner > path {
-  fill: #E5E5E5;
-}
-
-.button-pause-inner > path {
-  fill: #E5E5E5;
-}
-
-.button-stop-inner > path {
-  fill: #E5E5E5;
-}
-
-.button-next-inner > path {
-  fill: #E5E5E5;
+.search__button::-webkit-search-cancel-button {
+  position: relative;
+  right: 4vw;
 }
 
 .button_hidden {
   display: none;
 }
 
+.search__container {
+  position: relative;
+  align-items: center;
+}
+
+.magnifying-glass_position {
+  position: absolute;
+  top: calc((4vh - 16px) / 2);
+  right: 1vw;
+}
+
+header {
+  height: 10vh;
+  width: 100%;
+  border-bottom: 0.5vh solid rgb(255, 166, 0);
+}
+
+.header-container {
+  height: inherit;
+  align-items: center;
+  align-content: center;
+}
+
+.main-title__container {
+  column-gap: 1vw;
+  align-items: center;
+}
+
 .main__container {
-  height: 90vh;
+  height: 80vh;
   align-items: center;
   justify-content: center;
 }
@@ -833,4 +840,4 @@ footer {
   }
 }
 
-/*# sourceMappingURL=main.2a30.css.map*/
+/*# sourceMappingURL=main.981d.css.map*/
