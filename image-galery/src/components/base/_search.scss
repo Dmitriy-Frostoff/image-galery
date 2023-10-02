@@ -1,0 +1,47 @@
+.search__container {
+  // Position
+  position: relative;
+  // block-model
+  align-items: center;
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+  
+}
+
+.magnifying-glass {
+  // Position
+
+  // block-model
+
+  // Typography
+
+  // Decoration
+  @extend %cursor-pointer;
+
+  // Animation
+
+  // Various
+  
+}
+
+// modificators! Prior over above
+.magnifying-glass_position {
+  // Position
+  position: absolute;
+  // block-model
+  top: calc(($button-height - $text-fsize-M) / 2);
+  right: 1vw;
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+  
+}

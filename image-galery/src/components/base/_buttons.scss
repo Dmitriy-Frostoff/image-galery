@@ -2,17 +2,16 @@
   // Position
 
   // block-model
-  width: 44px;
-  height: 44px;
+  width: 40vw;
+  height: $button-height;
   @include flex-one-column ($flex-wrap: nowrap, $align-content: flex-start, $justify-content: center, $align-items: center);
-  padding: 10px 0px;
   // Typography
-
+  text-indent: 5%;
   // Decoration
-  border-radius: 50%;
-  border: 1px solid $color-background-dark;
+  border-radius: 1vw;
+  border: 1px solid $color-underline;
   @extend %cursor-pointer;
-  background-color: $color-background-dark-details;
+  background-color: $color-light-details;
   // Animation
   @extend %transition-basic;
   // Various
@@ -23,24 +22,16 @@
     @extend %transition-basic;
   }
 
-  &:hover >* > path {
-    fill: $color-dark;
-  }
-
   &:active {
-    animation: press 0.7s ease 0s 1;
     @extend %transition-basic;
   }
 }
 
-.audio-player-buttons {
+.search__button {
   // Position
 
   // block-model
-  width: 80%;
-  flex-wrap: nowrap;
-  justify-content: center;
-  column-gap: 1vw;
+
   // Typography
 
   // Decoration
@@ -48,156 +39,13 @@
   // Animation
 
   // Various
-
+  // button for deleting printed
+  &::-webkit-search-cancel-button {
+    position: relative;
+    right: 4vw;
+    @extend %cursor-pointer;
+    @extend %transition-basic;
 }
-
-.button-prev {
-  // Position
-
-  // block-model
-
-  // Typography
-
-  // Decoration
-
-  // Animation
-
-  // Various
-
-}
-
-.button-prev-inner {
-  // Position
-
-  // block-model
-
-  // Typography
-
-  // Decoration
-  @extend %pointer-events-disable;
-  // Animation
-  @extend %transition-basic;
-  // Various
-  & > path {
-    fill: $color-light-details;
-  }
-}
-
-.button-play {
-  // Position
-
-  // block-model
-
-  // Typography
-
-  // Decoration
-
-  // Animation
-
-  // Various
-
-}
-
-.button-play-inner {
-  // Position
-
-  // block-model
-
-  // Typography
-
-  // Decoration
-  @extend %pointer-events-disable;
-
-  // Animation
-  @extend %transition-basic;
-  // Various
-  & > path {
-    fill: $color-light-details;
-  }
-}
-
-.button-pause-inner {
-  // Position
-
-  // block-model
-
-  // Typography
-
-  // Decoration
-  @extend %pointer-events-disable;
-
-  // Animation
-  @extend %transition-basic;
-  // Various
-  & > path {
-    fill: $color-light-details;
-  }
-}
-
-.button-stop {
-  // Position
-
-  // block-model
-
-  // Typography
-
-  // Decoration
-
-  // Animation
-
-  // Various
-
-}
-
-.button-stop-inner {
-  // Position
-
-  // block-model
-
-  // Typography
-
-  // Decoration
-  @extend %pointer-events-disable;
-
-  // Animation
-  @extend %transition-basic;
-  // Various
-  & > path {
-    fill: $color-light-details;
-  }
-}
-
-.button-next {
-  // Position
-
-  // block-model
-
-  // Typography
-
-  // Decoration
-
-  // Animation
-
-  // Various
-
-}
-
-.button-next-inner {
-  // Position
-
-  // block-model
-
-  // Typography
-
-  // Decoration
-  @extend %pointer-events-disable;
-
-  // Animation
-  @extend %transition-basic;
-  // Various
-  & > path {
-    fill: $color-light-details;
-  }
 }
 
 // modificators. Have priority over above!

@@ -297,7 +297,7 @@ img {
 // =========================================== modificators!!! Priority over above ==============================
 // ==============================================================================================================
 
-.body_background-image {
+._background-color-dark {
   // Position
 
   // block-model
@@ -305,7 +305,7 @@ img {
   // Typography
 
   // Decoration
-  
+  background-color: $color-background-dark;
   // Animation
 
   // Various
@@ -556,6 +556,21 @@ img {
 
   // Typography
   letter-spacing: 0.08px;
+  // Decoration
+
+  // Animation
+
+  // Various
+
+}
+
+.text_fsize-h1 {
+  // Position
+
+  // block-model
+
+  // Typography
+  font-size: $title-h1_desktop;
   // Decoration
 
   // Animation
