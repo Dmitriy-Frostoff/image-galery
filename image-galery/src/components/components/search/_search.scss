@@ -13,6 +13,42 @@
   
 }
 
+.search__button {
+  // Position
+
+  // block-model
+
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+  // button for deleting printed
+  &::-webkit-search-cancel-button {
+    position: relative;
+    right: 4vw;
+    @extend %cursor-pointer;
+    @extend %transition-basic;
+  }
+
+  @include media-tablet-small {
+    // Position
+
+    // block-model
+    width: 80vw;
+    // Typography
+
+    // Decoration
+
+    // Animation
+
+    // Various
+      
+  }
+}
+
 .magnifying-glass {
   // Position
 

@@ -27,27 +27,6 @@
   }
 }
 
-.search__button {
-  // Position
-
-  // block-model
-
-  // Typography
-
-  // Decoration
-
-  // Animation
-
-  // Various
-  // button for deleting printed
-  &::-webkit-search-cancel-button {
-    position: relative;
-    right: 4vw;
-    @extend %cursor-pointer;
-    @extend %transition-basic;
-}
-}
-
 // modificators. Have priority over above!
 .button_hidden {
   // Position

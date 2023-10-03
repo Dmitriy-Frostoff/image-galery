@@ -9,3 +9,7 @@
 .layout-multiple-columns {
   @include flex-multiple-columns();
 }
+
+.grid-auto-fill {
+  @include grid-auto-fill();
+}

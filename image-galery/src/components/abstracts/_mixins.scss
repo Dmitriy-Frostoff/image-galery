@@ -54,6 +54,11 @@
   
 }
 
+@mixin grid-auto-fill ($min-width: 300px, $max-width: 1fr) {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax($min-width, $max-width));
+}
+
 @mixin media-wide-desktop {
   @media (min-width: calc($width-desktop + 1px)) {
     @content;

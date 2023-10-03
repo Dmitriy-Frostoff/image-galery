@@ -2,8 +2,10 @@ header {
   // Position
 
   // block-model
-  height: 10vh;
+  min-height: 10vh;
   width: 100%;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
   // Typography
 
   // Decoration
@@ -21,6 +23,7 @@ header {
   height: inherit;
   align-items: center;
   align-content: center;
+  row-gap: 2vw;
   // Typography
 
   // Decoration
