@@ -55,6 +55,289 @@ const headerHTMLElement = (0,_utilities_htmlCreateComponentHelper__WEBPACK_IMPOR
 
 /***/ }),
 
+/***/ "./image-galery/src/components/components/image-galery-content/imageGaleryContent.js":
+/*!*******************************************************************************************!*\
+  !*** ./image-galery/src/components/components/image-galery-content/imageGaleryContent.js ***!
+  \*******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   imageGaleryContentHTMLElement: () => (/* binding */ imageGaleryContentHTMLElement)
+/* harmony export */ });
+/* harmony import */ var _utilities_htmlCreateComponentHelper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../utilities/htmlCreateComponentHelper */ "./image-galery/src/components/utilities/htmlCreateComponentHelper.js");
+/* harmony import */ var _imageGaleryContent_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./imageGaleryContent.html */ "./image-galery/src/components/components/image-galery-content/imageGaleryContent.html");
+/* harmony import */ var _imageGalery_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../imageGalery.scss */ "./image-galery/src/components/imageGalery.scss");
+
+
+
+
+// project entire styles
+
+
+const imageGaleryContentHTMLElement = (0,_utilities_htmlCreateComponentHelper__WEBPACK_IMPORTED_MODULE_0__.htmlCreateComponentHelper)(_imageGaleryContent_html__WEBPACK_IMPORTED_MODULE_1__["default"]);
+
+
+
+/***/ }),
+
+/***/ "./image-galery/src/components/components/image-galery-content/imageGaleryContentHandler.js":
+/*!**************************************************************************************************!*\
+  !*** ./image-galery/src/components/components/image-galery-content/imageGaleryContentHandler.js ***!
+  \**************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   imageGaleryHandler: () => (/* binding */ imageGaleryHandler)
+/* harmony export */ });
+/* harmony import */ var _utilities_htmlCreateComponentHelper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../utilities/htmlCreateComponentHelper */ "./image-galery/src/components/utilities/htmlCreateComponentHelper.js");
+/* harmony import */ var _imageTemplate_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./imageTemplate.html */ "./image-galery/src/components/components/image-galery-content/imageTemplate.html");
+
+
+
+
+// project entire styles
+// import "../../imageGalery.scss"; //TODO! Test will script work without this?
+
+const imageGaleryContentHTMLElement = (0,_utilities_htmlCreateComponentHelper__WEBPACK_IMPORTED_MODULE_0__.htmlCreateComponentHelper)(_imageTemplate_html__WEBPACK_IMPORTED_MODULE_1__["default"]);
+
+function imageGaleryHandler() {
+  // classnames and ids
+  const searchButtonClassName = 'search__button';
+  const magnifyingGlassElementClassName = 'magnifying-glass_position';
+
+  const imageGaleryContentContainerClassName = 'image-galery-content__container';
+  const imageWrapperClassName = 'image-wrapper';
+  const imageContentClassName = 'image-content';
+
+  // HTML elements
+  const body = document.querySelector(`body`);
+
+  const searchButton = document.querySelector(`.${searchButtonClassName}`);
+  const magnifyingGlassElement = document.querySelector(`.${magnifyingGlassElementClassName}`);
+
+  const imageGaleryContentContainer = document.querySelector(`.${imageGaleryContentContainerClassName}`);
+  // const imageWrapper = document.querySelectorAll(`.${imageWrapperClassName}`);
+  // const imageContent = document.querySelectorAll(`.${imageContentClassName}`);
+  const imageWrapper = document.getElementsByClassName(`${imageWrapperClassName}`);
+  const imageContent = document.getElementsByClassName(`${imageContentClassName}`);
+  
+  // abstract data
+  const imageContentWidth = getComputedStyle(imageWrapper[0]).width;
+  const imageContentHeight = getComputedStyle(imageWrapper[0]).height;
+
+  // apikeys
+  const unsplashApiKeyString = 'jc4Wr95IEhsXFXsYx213dPJqBiq0oKrt7Pzq0yLpxrI';
+  // const testUnsplashApiKeyString = 'e2077ad31a806c894c460aec8f81bc2af4d09c4f8104ae3177bb809faf0eac17';
+  
+  // unsplash data
+  const unsplashURL = new URL('https://api.unsplash.com/');
+  // https://learn.javascript.ru/url
+  // method .searchParams
+  // e.g. .searchParams.append(.append('/search/photos', unsplashURL)) =>
+  // URL object .toString => 'https://api.unsplash.com/search/photos'
+  const unsplashURLSearch = new URL('/search/photos', unsplashURL);
+
+  let searchQuery = 'universe';
+
+  // utilities
+  function getSearchQuery() {
+    searchButton.addEventListener('search', (event) => {
+      event.preventDefault();
+      searchQuery = searchButton.value;
+    })
+
+    magnifyingGlassElement.addEventListener('click', (event) => {
+      event.preventDefault();
+      searchQuery = searchButton.value;
+    })
+  }
+
+  function getUrlWithQuery(baseURL, searchQuery) {
+    // it's impossible to reassign URL with new params added!!! Only creating new URL!
+    // e.g. const url2 = url1.searchParams.append('param', 'value')
+    // url2 === undefined
+    const baseURLWithSearchAndQuery = new URL('', baseURL);
+    // e.g. 'https://api.unsplash.com/search/photos' => 'https://api.unsplash.com/search/photos?query=universe'
+    baseURLWithSearchAndQuery.searchParams.append('query', `${searchQuery}`);
+    // return baseURLWithSearchAndQuery.searchParams.append('query', `${searchQuery}`); === undefined !!!!
+    return baseURLWithSearchAndQuery;
+  }
+
+  function getUrlWithlimitImagesPerResponse(baseURL, quantity = 10) {
+    // unsplash limit images per_page: 10 (default) ... 30;
+    const baseURLWithImageLimit = new URL('', baseURL);
+    // no other way to do so!
+    baseURLWithImageLimit.searchParams.append(`per_page`, `${quantity}`);
+    return baseURLWithImageLimit;
+  }
+
+  function getUrlWithsetImagesOrientationPerResponse(baseURL, orientation = 'portrait') {
+    // unsplash orientation: landscape, portrait, squarish;
+    const urlWithOrientation = new URL('', baseURL);
+    urlWithOrientation.searchParams.append(`orientation`, `${orientation}`);
+    return urlWithOrientation;
+  }
+
+  async function fetchData(preparedURL) {
+    const response = await fetch(preparedURL, {
+      method: 'GET',
+      headers: new Headers({
+        'Authorization': `Client-ID ${unsplashApiKeyString}`,
+      })
+    });
+
+    // response.ok === 200 ... 299
+    if (response.ok) {
+      const responseData = await response.json();
+      // array like below
+      // [{id..., likes..., links..., tags..., urls... etc}, {id..., likes..., links..., tags..., urls... etc} .... etc]
+      return responseData.results;
+    } else {
+      console.error( `HTTP response failure: ${response.status}` );
+    }
+  }
+
+  // get data [{...}, {...}, {...}] from the server
+  async function getDataObjectsArrayFromServer() {
+    // search button value on 'Enter' keydown
+    getSearchQuery();
+
+    const urlWithQuery = getUrlWithQuery(unsplashURLSearch, searchQuery);
+    const urlWithlimitImagesPerResponse = getUrlWithlimitImagesPerResponse(urlWithQuery, 16);
+    const urlWithsetImagesOrientationPerResponse = getUrlWithsetImagesOrientationPerResponse(urlWithlimitImagesPerResponse, 'landscape');
+    // async function always return promise!!! To deal with => use .then after async function implementation
+    // fetchData(urlWithsetImagesOrientationPerResponse).then(result => Object.assign(ObjectOfObjectsWithImages, result));
+    const arrayOfObjects = await fetchData(urlWithsetImagesOrientationPerResponse);
+    return arrayOfObjects;
+  }
+
+  function removeMeasureUnitFromSize(size) {
+    if (typeof size === 'string') {
+      if (size.includes('px')) {
+        return size.replace(/(?<=\d+\.?\d+)px/gi, '');
+      }
+    }
+  }
+
+  function setURLWithImageWidthHeight(rawURL, width = 10, height = 10) {
+    const imageURLWidthHeight = new URL('', rawURL);
+    imageURLWidthHeight.searchParams.append('w', `${removeMeasureUnitFromSize(width)}`);
+    imageURLWidthHeight.searchParams.append('h', `${removeMeasureUnitFromSize(height)}`);
+    return imageURLWidthHeight.toString();
+  }
+
+  async function setPreparedURLToImageWrappers(getDataObjectsArrayFromServer) {
+    (await getDataObjectsArrayFromServer()).forEach((dataObject, index) => {
+      // accident error occur if imageContent[index] didn't load yet!
+      // to prevent this add this condition
+      if (imageContent[index]) {
+        imageContent[index].style.backgroundImage = `url(${setURLWithImageWidthHeight(dataObject.urls.raw, imageContentWidth, imageContentHeight)})`;
+      }
+    })
+  }
+  
+  function handleImagesAndLinksResponsedFromServer() {
+    if (!imageGaleryContentContainer.classList.contains('grid-auto-fill')) {
+      imageGaleryContentContainer.classList.add('grid-auto-fill');
+      imageGaleryContentContainer.classList.remove('layout-multiple-columns');
+      imageGaleryContentContainer.classList.remove('_empty-request__container');
+    }
+
+    imageContent[0].style.width = '';
+    imageContent[0].style.height = '';
+  }
+
+  async function removeExtraImageWrappers() {
+    // remove all extra imageWrapper
+    for (let i = 0; i < (imageWrapper.length - (await getDataObjectsArrayFromServer()).length); i++) {
+      imageWrapper[i].remove();
+    }
+  }
+
+  function handleEmptyUsersRequest() {
+    // leave the one imageWrapper
+    for (let i = 0; i < imageWrapper.length - 1; i++) {
+      imageWrapper[i].remove();
+    }
+    // styling image of empty request
+    imageGaleryContentContainer.classList.remove('grid-auto-fill');
+    imageGaleryContentContainer.classList.add('layout-multiple-columns');
+    imageGaleryContentContainer.classList.add('_empty-request__container');
+
+    imageContent[0].style.width = '50vw';
+    imageContent[0].style.height = '50vh';
+    imageContent[0].style.backgroundImage = `url(${setURLWithImageWidthHeight('https://images.unsplash.com/photo-1555861496-0666c8981751?ixid=M3w5ODA5OXwwfDF8c2VhcmNofDR8fDQwNHxlbnwwfDB8fHwxNjk2MzQ0ODQ5fDA&ixlib=rb-4.0.3', imageContentWidth, imageContentHeight)})`;
+  }
+
+  async function addRequiredImageWrappers() {
+    for (let i = 0; i < (await getDataObjectsArrayFromServer()).length - imageWrapper.length; i++) {
+      imageGaleryContentContainer.append(imageGaleryContentHTMLElement.cloneNode(true));
+    }
+  }
+
+  async function handleImageWrapperElements(getDataObjectsArrayFromServer) {
+    // quantity of content images === links quantity, responsed from server
+    if (imageWrapper.length === (await getDataObjectsArrayFromServer()).length) {
+      handleImagesAndLinksResponsedFromServer();
+      setPreparedURLToImageWrappers(getDataObjectsArrayFromServer);
+    }
+
+    // quantity of content images > links quantity, responsed from server
+    if ((imageWrapper.length > (await getDataObjectsArrayFromServer()).length) && (await getDataObjectsArrayFromServer()).length) {
+      removeExtraImageWrappers();
+      setPreparedURLToImageWrappers(getDataObjectsArrayFromServer);
+    }
+    
+    // quantity of content images < links quantity, responsed from server
+    if (imageWrapper.length < (await getDataObjectsArrayFromServer()).length) {
+      addRequiredImageWrappers();
+      setPreparedURLToImageWrappers(getDataObjectsArrayFromServer);
+    }
+    
+    // empty request from user
+    if (!searchQuery) {
+      handleEmptyUsersRequest();
+    }
+  }
+
+  // realization of image galery logic
+
+  // observe imageGaleryContentContainer childs add | remove
+  // and handle the images
+  let mutatuinObserver = new MutationObserver(changes => {
+    handleImageWrapperElements(getDataObjectsArrayFromServer)
+  })
+
+  mutatuinObserver.observe(imageGaleryContentContainer, {
+    childList: true,
+    childListOldValue: true,
+    subtree: true, 
+  })
+
+  // logic for page on load (the entire script loads on window 'load' event at higher level)
+  handleImageWrapperElements(getDataObjectsArrayFromServer);
+
+  // logic for search button
+  searchButton.addEventListener('search', (event) => {
+    event.preventDefault();
+    handleImageWrapperElements(getDataObjectsArrayFromServer);
+  })
+
+  // logic for search button
+  magnifyingGlassElement.addEventListener('click', (event) => {
+    event.preventDefault();
+    handleImageWrapperElements(getDataObjectsArrayFromServer);
+  })
+}
+
+
+
+/***/ }),
+
 /***/ "./image-galery/src/components/components/main/main.js":
 /*!*************************************************************!*\
   !*** ./image-galery/src/components/components/main/main.js ***!
@@ -82,6 +365,33 @@ const mainHTMLElement = (0,_utilities_htmlCreateComponentHelper__WEBPACK_IMPORTE
 
 /***/ }),
 
+/***/ "./image-galery/src/components/components/search/search.js":
+/*!*****************************************************************!*\
+  !*** ./image-galery/src/components/components/search/search.js ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   searchHTMLElement: () => (/* binding */ searchHTMLElement)
+/* harmony export */ });
+/* harmony import */ var _utilities_htmlCreateComponentHelper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../utilities/htmlCreateComponentHelper */ "./image-galery/src/components/utilities/htmlCreateComponentHelper.js");
+/* harmony import */ var _search_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./search.html */ "./image-galery/src/components/components/search/search.html");
+/* harmony import */ var _imageGalery_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../imageGalery.scss */ "./image-galery/src/components/imageGalery.scss");
+
+
+
+
+// project entire styles
+
+
+const searchHTMLElement = (0,_utilities_htmlCreateComponentHelper__WEBPACK_IMPORTED_MODULE_0__.htmlCreateComponentHelper)(_search_html__WEBPACK_IMPORTED_MODULE_1__["default"]);
+
+
+
+/***/ }),
+
 /***/ "./image-galery/src/components/imageGalerySelfCheck/imageGalerySelfCheck.js":
 /*!**********************************************************************************!*\
   !*** ./image-galery/src/components/imageGalerySelfCheck/imageGalerySelfCheck.js ***!
@@ -89,7 +399,14 @@ const mainHTMLElement = (0,_utilities_htmlCreateComponentHelper__WEBPACK_IMPORTE
 /***/ (() => {
 
 console.log(`
-Привет!) Я ещё доделываю... Надеюсь на твоё понимание) На текущий момент готово: header, footer.
+Привет!) Детальное описание и самопроверка внизу. 
+
+Из готовых фич: 
+ - полностью адаптивный дизайн (device width от 375px до 1920px (и выше))
+ - обработка пустого запроса (попробуй ;) )
+ - динамичекое изменение количества изображений (пока что - видно только при смене: пустой запрос от пользователя <=> пользователь ввёл данные)
+
+ TODO фич внизу...
 
 **ТЗ** https://github.com/rolling-scopes-school/tasks/blob/master/tasks/js30%23/js30-5.md
 
@@ -97,35 +414,48 @@ console.log(`
 https://rolling-scopes-school.github.io/checklist/
 
 
-**Ваша оценка - 20 баллов** 
+**Ваша оценка - 70 баллов** 
 
 #### Отзыв по пунктам ТЗ:
 
-#####**Не выполненные/не засчитанные пункты:**
+#####**Выполненные пункты:**
 =====================================================
 1) на странице есть несколько фото и строка поиска
 
-2) При загрузке приложения на странице отображаются полученные от API изображения
+2) в футере приложения есть ссылка на гитхаб автора приложения, год создания приложения, логотип курса со ссылкой на курс
 
-3) Если в поле поиска ввести слово и отправить поисковый запрос, на странице отобразятся изображения соответствующей тематики, если такие данные предоставляет API
+3) При загрузке приложения на странице отображаются полученные от API изображения
 
-4) автозаполнение поля ввода отключено (нет выпадающего списка с предыдущими запросами)
+4) Если в поле поиска ввести слово и отправить поисковый запрос, на странице отобразятся изображения соответствующей тематики, если такие данные предоставляет API
 
-5) поисковый запрос можно отправить нажатием клавиши Enter
+5) при открытии приложения курсор находится в поле ввода
 
-6) после отправки поискового запроса и отображения результатов поиска, поисковый запрос продолжает отображаться в поле ввода
+6) есть placeholder
 
-7) Очень высокое качество оформления приложения и/или дополнительный не предусмотренный в задании функционал, улучшающий качество приложения
+7) автозаполнение поля ввода отключено (нет выпадающего списка с предыдущими запросами)
 
-#####**Выполненные пункты:**
-=====================================================
-1) в футере приложения есть ссылка на гитхаб автора приложения, год создания приложения, логотип курса со ссылкой на курс
+8) поисковый запрос можно отправить нажатием клавиши Enter
 
-2) при открытии приложения курсор находится в поле ввода
+9) после отправки поискового запроса и отображения результатов поиска, поисковый запрос продолжает отображаться в поле ввода
 
-3) есть placeholder
+10) в поле ввода есть крестик при клике по которому поисковый запрос из поля ввода удаляется и отображается placeholder
 
-4) в поле ввода есть крестик при клике по которому поисковый запрос из поля ввода удаляется и отображается placeholder
+11) Очень высокое качество оформления приложения и/или дополнительный не предусмотренный в задании функционал, улучшающий качество приложения
+
+  стэк: webpack 5, html, css/scss, vanilla JS
+
+  features:
+- [x] улучшенный дизайн (+ есть favicon)
+- [x] адаптация для устройств с device width от 375px до 1920px (и выше)
+- [x] поиск по клику на лупу в поле ввода
+- [x] обработка пустого ввода в поиск
+- [x] динамическая обработка количества изображений при помощи JS (пока до 16 max на странице)
+
+  TODO!
+- [] автоподгрузка изображений при скролле вниз (либо добавить кнопку для загрузки изображений)
+- [] добавить пагинацию при клике на изображение
+- [] добавить возможность перелистывания изображений по кликам влево - вправо при открытом окне пагинации с картинкой
+- [] добавить возможность кэширования запросов (получения URL от unspash server)
 `)
 
 /***/ }),
@@ -179,7 +509,43 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 // Module
-var code = "<!-- header start -->\r\n<header class=\"_background-color-dark\">\r\n  <div class=\"container layout-multiple-columns header-container\">\r\n    <div class=\"layout-multiple-columns main-title__container\">\r\n      <i class=\"fa-solid fa-camera text_interactive text_fsize-h1\"></i>\r\n      <h1 class=\"title-h1\">Image-gallery</h1>\r\n    </div>\r\n    <div class=\"layout-multiple-columns search__container\">\r\n      <input class=\"button search__button\" type=\"search\" name=\"search\" id=\"searchButton\" placeholder=\"enter something...\" autofocus=\"true\" autocomplete=\"false\">\r\n      <i class=\"fa-solid fa-magnifying-glass magnifying-glass magnifying-glass_position\"></i>\r\n    </div>\r\n  </div>\r\n</header>\r\n<!-- header end -->\r\n";
+var code = "<!-- header start -->\r\n<header class=\"_background-color-dark\">\r\n  <div class=\"container layout-multiple-columns header-container\">\r\n    <div class=\"layout-multiple-columns main-title__container\">\r\n      <i class=\"fa-solid fa-camera text_interactive text_fsize-h1\"></i>\r\n      <h1 class=\"title-h1\">Image-gallery</h1>\r\n    </div>\r\n  </div>\r\n</header>\r\n<!-- header end -->\r\n";
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);
+
+/***/ }),
+
+/***/ "./image-galery/src/components/components/image-galery-content/imageGaleryContent.html":
+/*!*********************************************************************************************!*\
+  !*** ./image-galery/src/components/components/image-galery-content/imageGaleryContent.html ***!
+  \*********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+// Module
+var code = "<div class=\"container grid-auto-fill image-galery-content__container\">\r\n  <div class=\"image-wrapper\">\r\n    <div class=\"image-content\">&nbsp;</div>\r\n  </div>\r\n  <div class=\"image-wrapper\">\r\n    <div class=\"image-content\">&nbsp;</div>\r\n  </div>\r\n  <div class=\"image-wrapper\">\r\n    <div class=\"image-content\">&nbsp;</div>\r\n  </div>\r\n  <div class=\"image-wrapper\">\r\n    <div class=\"image-content\">&nbsp;</div>\r\n  </div>\r\n  <div class=\"image-wrapper\">\r\n    <div class=\"image-content\">&nbsp;</div>\r\n  </div>\r\n  <div class=\"image-wrapper\">\r\n    <div class=\"image-content\">&nbsp;</div>\r\n  </div>\r\n  <div class=\"image-wrapper\">\r\n    <div class=\"image-content\">&nbsp;</div>\r\n  </div>\r\n  <div class=\"image-wrapper\">\r\n    <div class=\"image-content\">&nbsp;</div>\r\n  </div>\r\n  <div class=\"image-wrapper\">\r\n    <div class=\"image-content\">&nbsp;</div>\r\n  </div>\r\n  <div class=\"image-wrapper\">\r\n    <div class=\"image-content\">&nbsp;</div>\r\n  </div>\r\n</div>";
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);
+
+/***/ }),
+
+/***/ "./image-galery/src/components/components/image-galery-content/imageTemplate.html":
+/*!****************************************************************************************!*\
+  !*** ./image-galery/src/components/components/image-galery-content/imageTemplate.html ***!
+  \****************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+// Module
+var code = "<div class=\"image-wrapper\">\r\n  <div class=\"image-content\">&nbsp;</div>\r\n</div>";
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);
 
@@ -198,6 +564,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 // Module
 var code = "<!-- main start -->\r\n<main class=\"layout-one-column main__container _background-color-dark\"></main>\r\n<!-- main end -->";
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);
+
+/***/ }),
+
+/***/ "./image-galery/src/components/components/search/search.html":
+/*!*******************************************************************!*\
+  !*** ./image-galery/src/components/components/search/search.html ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+// Module
+var code = "<div class=\"layout-multiple-columns search__container\">\r\n  <input class=\"button search__button\" id=\"search\" type=\"search\" name=\"search\" id=\"searchButton\" placeholder=\"enter something...\" autofocus=\"true\" autocomplete=\"false\" autocorrect=\"on\">\r\n  <i class=\"fa-solid fa-magnifying-glass magnifying-glass magnifying-glass_position\"></i>\r\n</div>\r\n";
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);
 
@@ -426,10 +810,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ "./image-galery/src/components/index.html");
 /* harmony import */ var _imageGalery_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./imageGalery.scss */ "./image-galery/src/components/imageGalery.scss");
 /* harmony import */ var _components_header_header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/header/header */ "./image-galery/src/components/components/header/header.js");
-/* harmony import */ var _components_main_main__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/main/main */ "./image-galery/src/components/components/main/main.js");
-/* harmony import */ var _components_footer_footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/footer/footer */ "./image-galery/src/components/components/footer/footer.js");
-/* harmony import */ var _imageGalerySelfCheck_imageGalerySelfCheck__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./imageGalerySelfCheck/imageGalerySelfCheck */ "./image-galery/src/components/imageGalerySelfCheck/imageGalerySelfCheck.js");
-/* harmony import */ var _imageGalerySelfCheck_imageGalerySelfCheck__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_imageGalerySelfCheck_imageGalerySelfCheck__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _components_search_search__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/search/search */ "./image-galery/src/components/components/search/search.js");
+/* harmony import */ var _components_main_main__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/main/main */ "./image-galery/src/components/components/main/main.js");
+/* harmony import */ var _components_image_galery_content_imageGaleryContent__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/image-galery-content/imageGaleryContent */ "./image-galery/src/components/components/image-galery-content/imageGaleryContent.js");
+/* harmony import */ var _components_footer_footer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/footer/footer */ "./image-galery/src/components/components/footer/footer.js");
+/* harmony import */ var _imageGalerySelfCheck_imageGalerySelfCheck__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./imageGalerySelfCheck/imageGalerySelfCheck */ "./image-galery/src/components/imageGalerySelfCheck/imageGalerySelfCheck.js");
+/* harmony import */ var _imageGalerySelfCheck_imageGalerySelfCheck__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_imageGalerySelfCheck_imageGalerySelfCheck__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _components_image_galery_content_imageGaleryContentHandler__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/image-galery-content/imageGaleryContentHandler */ "./image-galery/src/components/components/image-galery-content/imageGaleryContentHandler.js");
 
 
 
@@ -438,7 +825,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 // self - check
+
+
+// logic and utilities
 
 
 // HTML elements
@@ -446,12 +837,22 @@ const body = document.querySelector('body');
 
 // nesting components
 body.append(_components_header_header__WEBPACK_IMPORTED_MODULE_2__.headerHTMLElement);
-body.append(_components_main_main__WEBPACK_IMPORTED_MODULE_3__.mainHTMLElement);
-const main = document.querySelector('main');
+const headerContainer = document.querySelector('.header-container');
+headerContainer.append(_components_search_search__WEBPACK_IMPORTED_MODULE_3__.searchHTMLElement);
 
-body.append(_components_footer_footer__WEBPACK_IMPORTED_MODULE_4__.footerHTMLSection);
+
+body.append(_components_main_main__WEBPACK_IMPORTED_MODULE_4__.mainHTMLElement);
+const main = document.querySelector('main');
+main.append(_components_image_galery_content_imageGaleryContent__WEBPACK_IMPORTED_MODULE_5__.imageGaleryContentHTMLElement);
+
+body.append(_components_footer_footer__WEBPACK_IMPORTED_MODULE_6__.footerHTMLSection);
+
+// functions realization
+window.addEventListener('load', () => {
+  (0,_components_image_galery_content_imageGaleryContentHandler__WEBPACK_IMPORTED_MODULE_8__.imageGaleryHandler)();
+})
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=main.611c.js.map
+//# sourceMappingURL=main.cb72.js.map
