@@ -602,14 +602,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0__);
 // Imports
 
-var ___HTML_LOADER_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../assets/icons/icons8-camera-ios-16-16.ico */ "./image-galery/src/assets/icons/icons8-camera-ios-16-16.ico"), __webpack_require__.b);
-var ___HTML_LOADER_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../assets/icons/icons8-camera-ios-16-32.ico */ "./image-galery/src/assets/icons/icons8-camera-ios-16-32.ico"), __webpack_require__.b);
-var ___HTML_LOADER_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! ../assets/icons/icons8-camera-ios-16-96.ico */ "./image-galery/src/assets/icons/icons8-camera-ios-16-96.ico"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../assets/icons/favicon.ico */ "./image-galery/src/assets/icons/favicon.ico"), __webpack_require__.b);
 // Module
 var ___HTML_LOADER_REPLACEMENT_0___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_0___);
-var ___HTML_LOADER_REPLACEMENT_1___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_1___);
-var ___HTML_LOADER_REPLACEMENT_2___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_2___);
-var code = "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n  <meta charset=\"UTF-8\">\r\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n  <meta name=\"keywords\" content=\"image-galery, unsplash-api\">\r\n  <title>Image-galery</title>\r\n   <!-- favicon start -->\r\n   <link rel=\"icon\" href=\"" + ___HTML_LOADER_REPLACEMENT_0___ + "\" sizes=\"16x16\" type=\"image/x-icon\">\r\n   <link rel=\"icon\" href=\"" + ___HTML_LOADER_REPLACEMENT_1___ + "\" sizes=\"32x32\" type=\"image/x-icon\">\r\n   <link rel=\"icon\" href=\"" + ___HTML_LOADER_REPLACEMENT_2___ + "\" sizes=\"96x96\" type=\"image/x-icon\">\r\n   <!-- favicon end -->\r\n  <!-- css elements start -->\r\n  <!-- css elements end -->\r\n  <!-- Fonts links start -->\r\n  <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\r\n  <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\r\n  <link href=\"https://fonts.googleapis.com/css2?family=Inter&display=swap\" rel=\"stylesheet\">\r\n  <!-- Fonts links end -->\r\n  <!-- Font Awesome icons start -->\r\n  <" + "script src=\"https://kit.fontawesome.com/f52ba816e9.js\" crossorigin=\"anonymous\"><" + "/script>\r\n  <!-- Font Awesome icons end -->\r\n</head>\r\n<body>\r\n</body>\r\n</html>";
+var code = "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n  <meta charset=\"UTF-8\">\r\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n  <meta name=\"keywords\" content=\"image-galery, unsplash-api\">\r\n  <title>Image-galery</title>\r\n  <!-- favicon start -->\r\n  <link rel=\"icon\" href=\"" + ___HTML_LOADER_REPLACEMENT_0___ + "\" sizes=\"48x48\" type=\"image/x-icon\">\r\n   <!-- favicon end -->\r\n  <!-- css elements start -->\r\n  <!-- css elements end -->\r\n  <!-- Fonts links start -->\r\n  <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\r\n  <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\r\n  <link href=\"https://fonts.googleapis.com/css2?family=Inter&display=swap\" rel=\"stylesheet\">\r\n  <!-- Fonts links end -->\r\n  <!-- Font Awesome icons start -->\r\n  <" + "script src=\"https://kit.fontawesome.com/f52ba816e9.js\" crossorigin=\"anonymous\"><" + "/script>\r\n  <!-- Font Awesome icons end -->\r\n</head>\r\n<body>\r\n</body>\r\n</html>";
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);
 
@@ -664,36 +660,14 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./image-galery/src/assets/icons/icons8-camera-ios-16-16.ico":
-/*!*******************************************************************!*\
-  !*** ./image-galery/src/assets/icons/icons8-camera-ios-16-16.ico ***!
-  \*******************************************************************/
+/***/ "./image-galery/src/assets/icons/favicon.ico":
+/*!***************************************************!*\
+  !*** ./image-galery/src/assets/icons/favicon.ico ***!
+  \***************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "src/assets/icons/icons8-camera-ios-16-16.1e93.ico";
-
-/***/ }),
-
-/***/ "./image-galery/src/assets/icons/icons8-camera-ios-16-32.ico":
-/*!*******************************************************************!*\
-  !*** ./image-galery/src/assets/icons/icons8-camera-ios-16-32.ico ***!
-  \*******************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-module.exports = __webpack_require__.p + "src/assets/icons/icons8-camera-ios-16-32.76db.ico";
-
-/***/ }),
-
-/***/ "./image-galery/src/assets/icons/icons8-camera-ios-16-96.ico":
-/*!*******************************************************************!*\
-  !*** ./image-galery/src/assets/icons/icons8-camera-ios-16-96.ico ***!
-  \*******************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-module.exports = __webpack_require__.p + "src/assets/icons/icons8-camera-ios-16-96.773d.ico";
+module.exports = __webpack_require__.p + "src/assets/icons/favicon.1f94.ico";
 
 /***/ })
 
@@ -855,4 +829,4 @@ window.addEventListener('load', () => {
 
 /******/ })()
 ;
-//# sourceMappingURL=main.cb72.js.map
+//# sourceMappingURL=main.b8bc.js.map
