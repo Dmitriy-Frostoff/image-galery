@@ -31,9 +31,7 @@ export function imageGaleryHandler() {
   const imageContentHeight = getComputedStyle(imageWrapper[0]).height;
 
   // apikeys
-  // const unsplashApiKeyString = 'jc4Wr95IEhsXFXsYx213dPJqBiq0oKrt7Pzq0yLpxrI';
-  // const testUnsplashApiKeyString = 'e2077ad31a806c894c460aec8f81bc2af4d09c4f8104ae3177bb809faf0eac17';
-  const unsplashApiKeyString = 'e2077ad31a806c894c460aec8f81bc2af4d09c4f8104ae3177bb809faf0eac17';
+  const unsplashApiKeyString = 'jc4Wr95IEhsXFXsYx213dPJqBiq0oKrt7Pzq0yLpxrI';
   
   // unsplash data
   const unsplashURL = new URL('https://api.unsplash.com/');
@@ -78,6 +76,14 @@ export function imageGaleryHandler() {
     event.preventDefault();
     searchQuery = searchButton.value;
     handleImageWrapperElements(imageWrapper, getDataObjectsArrayFromServer, searchParams, imageWrapperElementsParams, searchQuery);
+  })
+
+  // return current searchQuery to the searchButton when user manually delete search word
+  searchButton.addEventListener('blur', (event) => {
+    // event.preventDefault();
+    if (!searchButton.value) {
+      searchButton.value = searchQuery;
+    }
   })
   
   // logic for search button

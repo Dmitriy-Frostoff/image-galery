@@ -29,6 +29,7 @@
   &::-webkit-search-cancel-button {
     position: relative;
     right: 4vw;
+    filter: $color-interactive-hue;
     @extend %cursor-pointer;
     @extend %transition-basic;
   }
