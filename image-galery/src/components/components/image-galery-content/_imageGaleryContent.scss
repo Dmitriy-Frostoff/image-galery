@@ -1,0 +1,73 @@
+.image-galery-content__container {
+  // Position
+
+  // block-model
+  width: 100%;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  gap: 2vw;
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+  
+}
+
+.image-wrapper {
+  // Position
+
+  // block-model
+  min-width: 300px;
+  min-height: 300px;
+  // Typography
+
+  // Decoration
+  @extend %cursor-pointer;
+
+  // Animation
+
+  // Various
+  
+}
+
+.image-content {
+  // Position
+
+  // block-model
+  min-width: inherit;
+  min-height: inherit;
+  // Typography
+
+  // Decoration
+  border-radius: 1vw;
+  @extend %pointer-events-disable;
+  background-color: $color-dark-details; // test only! Delete this!
+  background-image: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  // Animation
+
+  // Various
+  
+}
+
+// modificators! Prior over above
+._empty-request__container {
+  // Position
+
+  // block-model
+  justify-content: center;
+  align-items: center;
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+  
+}

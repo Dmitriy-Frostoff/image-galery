@@ -1,0 +1,44 @@
+.button {
+  // Position
+
+  // block-model
+  width: 40vw;
+  height: $button-height;
+  @include flex-one-column ($flex-wrap: nowrap, $align-content: flex-start, $justify-content: center, $align-items: center);
+  // Typography
+  text-indent: 5%;
+  // Decoration
+  border-radius: 1vw;
+  border: 1px solid $color-underline;
+  @extend %cursor-pointer;
+  background-color: $color-light-details;
+  // Animation
+  @extend %transition-basic;
+  // Various
+  &:hover {
+    border-color: $color-light-details;
+    background-color: $color-light-details;
+    @extend %cursor-pointer;
+    @extend %transition-basic;
+  }
+
+  &:active {
+    @extend %transition-basic;
+  }
+}
+
+// modificators. Have priority over above!
+.button_hidden {
+  // Position
+
+  // block-model
+  display: none;
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+
+}
