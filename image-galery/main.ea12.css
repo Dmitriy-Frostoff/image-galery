@@ -716,6 +716,7 @@ header {
 .search__button::-webkit-search-cancel-button {
   position: relative;
   right: 4vw;
+  filter: invert(60%) sepia(100%) saturate(80%) hue-rotate(11rad);
 }
 @media (max-width: 640px) {
   .search__button {
@@ -881,4 +882,4 @@ footer {
   }
 }
 
-/*# sourceMappingURL=main.9a3f.css.map*/
+/*# sourceMappingURL=main.ea12.css.map*/
